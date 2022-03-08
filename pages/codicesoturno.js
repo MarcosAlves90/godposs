@@ -31,10 +31,10 @@ const CdiceSoturno = (props) => {
           <div className="container1">
             <div className="card">
               <h1 className="text">Códice Soturno</h1>
-              <h1 className="text01">
+              <h1 className="text1">
                 &quot;Muito cuidado com o que deseja&quot;
               </h1>
-              <span className="text02">
+              <span className="text2">
                 <span>
                   O Códice Soturno é uma comunidade voltada a construção de
                   programas e aprendizado na área de programação. Nada que é
@@ -54,22 +54,11 @@ const CdiceSoturno = (props) => {
                 <span></span>
               </span>
               <div className="container2">
-                <div className="container3">
-                  <Link href="/projetos">
-                    <a className="link">
-                      <Buto button="Voltar" className="component1"></Buto>
-                    </a>
-                  </Link>
-                </div>
-                <button className="button">
-                  <span className="text08">
-                    <span>Baixar o Oceanite</span>
-                    <span></span>
-                  </span>
-                </button>
-                <button className="button1 button">
-                  <span className="text11">Baixar a DLL (krnl)</span>
-                </button>
+                <Link href="/projetos">
+                  <a className="link">
+                    <Buto button="Voltar" className="component1"></Buto>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -133,11 +122,11 @@ const CdiceSoturno = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #FF5F00;
+            background-color: #73cb6e;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          .text01 {
+          .text1 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             text-align: center;
@@ -148,7 +137,7 @@ const CdiceSoturno = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text02 {
+          .text2 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -168,70 +157,11 @@ const CdiceSoturno = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .container3 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-          }
           .link {
             display: contents;
           }
           .component1 {
             text-decoration: none;
-          }
-          .button {
-            color: var(--dl-color-gray-white);
-            opacity: 0;
-            outline: none;
-            font-size: 0.75rem;
-            background: #1C1C1C;
-            font-style: normal;
-            font-family: Open Sans;
-            font-weight: 700;
-            line-height: 1.4;
-            margin-left: 15px;
-            padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: #4c4d50;
-            border-width: 0px;
-            padding-left: var(--dl-space-space-unitandahalfunit);
-            border-radius: 0px;
-            padding-right: var(--dl-space-space-unitandahalfunit);
-            letter-spacing: -0.025rem;
-            padding-bottom: var(--dl-space-space-triplequarterunit);
-            text-transform: uppercase;
-          }
-          .text08 {
-            font-size: 0.8rem;
-            font-style: normal;
-            font-weight: 600;
-          }
-          .button1 {
-            color: var(--dl-color-gray-white);
-            opacity: 0;
-            outline: none;
-            font-size: 0.75rem;
-            background: #4F4F4F;
-            font-style: normal;
-            font-family: Open Sans;
-            font-weight: 700;
-            line-height: 1.4;
-            margin-left: 15px;
-            padding-top: var(--dl-space-space-triplequarterunit);
-            border-width: 0px;
-            padding-left: var(--dl-space-space-unitandahalfunit);
-            border-radius: 0px;
-            padding-right: var(--dl-space-space-unitandahalfunit);
-            letter-spacing: -0.025rem;
-            padding-bottom: var(--dl-space-space-triplequarterunit);
-            text-transform: uppercase;
-          }
-          .text11 {
-            font-size: 0.8rem;
-            font-style: normal;
-            font-weight: 600;
           }
           @media (max-width: 991px) {
             .hero {
@@ -265,10 +195,10 @@ const CdiceSoturno = (props) => {
             .text {
               font-size: 3.1rem;
             }
-            .text01 {
+            .text1 {
               display: none;
             }
-            .text02 {
+            .text2 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -293,7 +223,7 @@ const CdiceSoturno = (props) => {
             .text {
               font-size: 3rem;
             }
-            .text02 {
+            .text2 {
               font-size: 1rem;
             }
           }

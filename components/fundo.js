@@ -8,8 +8,8 @@ const Fundo = (props) => {
       <div className={`container ${props.rootClassName} `}>
         <img
           alt={props.image_alt}
-          src={props.image_src}
           loading="eager"
+          src={props.image_src}
           className="image"
         />
       </div>
@@ -45,7 +45,8 @@ const Fundo = (props) => {
 
 Fundo.defaultProps = {
   image_alt: 'image',
-  image_src: '/playground_assets/imagem_2022-02-20_151606-1000w.png',
+  image_src:
+    'https://images.unsplash.com/photo-1608474123141-fe3bfaa64e67?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxhZXN0aGV0aWMlMjBncmVlbnxlbnwwfHx8fDE2NDY3MTQwOTE&ixlib=rb-1.2.1&w=1000',
   rootClassName: '',
 }
 

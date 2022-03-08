@@ -115,7 +115,7 @@ const Hysax = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #FF5F00;
+            background-color: #73cb6e;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -160,7 +160,7 @@ const Hysax = (props) => {
             color: var(--dl-color-gray-white);
             outline: none;
             font-size: 0.75rem;
-            background: #8D4E41;
+            background: #b36f60;
             font-style: normal;
             transition: 0.3s;
             font-family: Open Sans;

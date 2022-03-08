@@ -133,7 +133,7 @@ const Incio = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #FF5F00;
+            background-color: #73cb6e;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -172,7 +172,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon {
-            fill: #FF5F00;
+            fill: #73cb6e;
             width: 90px;
             height: 80px;
             align-self: stretch;
@@ -188,7 +188,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon2 {
-            fill: #FF5F00;
+            fill: #73cb6e;
             width: 90px;
             height: 80px;
             transition: 0.3s;
@@ -203,7 +203,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon4 {
-            fill: #FF5F00;
+            fill: #73cb6e;
             width: 90px;
             height: 80px;
             transition: 0.3s;

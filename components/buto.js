@@ -18,7 +18,7 @@ const Buto = (props) => {
             color: var(--dl-color-gray-white);
             outline: none;
             font-size: 0.8rem;
-            background: #FF5F00;
+            background: #73cb6e;
             font-style: normal;
             transition: 0.3s;
             font-family: Open Sans;

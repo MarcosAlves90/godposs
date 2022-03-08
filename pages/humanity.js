@@ -104,7 +104,7 @@ const HUmanity = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #FF5F00;
+            background-color: #73cb6e;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
