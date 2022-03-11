@@ -8,8 +8,8 @@ const Fundo = (props) => {
       <div className={`container ${props.rootClassName} `}>
         <img
           alt={props.image_alt}
-          loading="eager"
           src={props.image_src}
+          loading="eager"
           className="image"
         />
       </div>

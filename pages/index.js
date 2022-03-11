@@ -42,6 +42,12 @@ const Incio = (props) => {
                   interessem pelo menos um pouco por eles.
                 </span>
               </span>
+              <h1 className="text4">Anotações</h1>
+              <h1 className="text5">&quot;Nós costumávamos conversar&quot;</h1>
+              <span className="text6">
+                09/03/22 &gt; Preciso continuar escrevendo as histórias do
+                projeto Dark Stories, mas não sei como continuar.
+              </span>
               <div className="container2">
                 <a
                   href="https://twitter.com/PanWHoney"
@@ -105,7 +111,7 @@ const Incio = (props) => {
             position: relative;
             max-width: 1320px;
             min-height: 85vh;
-            align-items: flex-start;
+            align-items: flex-end;
             flex-direction: column;
             justify-content: center;
           }
@@ -118,7 +124,7 @@ const Incio = (props) => {
             align-self: flex-start;
             box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
-            margin-top: var(--dl-space-space-tripleunit);
+            margin-top: 200px;
             align-items: flex-start;
             flex-direction: column;
             backdrop-filter: saturate(200%) blur(30px);
@@ -149,6 +155,42 @@ const Incio = (props) => {
             text-decoration: overline;
           }
           .text2 {
+            color: var(--dl-color-secondary-600);
+            font-size: 1.25rem;
+            font-family: Open Sans;
+            font-weight: 400;
+            line-height: 1.625;
+            margin-right: var(--dl-space-space-tripleunit);
+            margin-bottom: var(--dl-space-space-unit);
+            padding-right: var(--dl-space-space-tripleunit);
+            text-transform: none;
+            text-decoration: none;
+          }
+          .text4 {
+            color: #e81d24;
+            font-size: 3.25rem;
+            text-align: center;
+            font-family: Righteous;
+            font-weight: 700;
+            line-height: 1.3;
+            text-transform: none;
+            text-decoration: none;
+            background-color: #73cb6e;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .text5 {
+            color: var(--dl-color-secondary-700);
+            font-size: 2rem;
+            text-align: center;
+            font-family: Open Sans;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: var(--dl-space-space-unitandahalfunit);
+            text-transform: none;
+            text-decoration: overline;
+          }
+          .text6 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -234,6 +276,7 @@ const Incio = (props) => {
               top: 65px;
               right: 0px;
               position: absolute;
+              margin-top: 30px;
               align-items: center;
             }
             .text {
@@ -243,6 +286,18 @@ const Incio = (props) => {
               display: none;
             }
             .text2 {
+              font-size: 1.1rem;
+              text-align: left;
+              margin-right: 0px;
+              padding-right: 0px;
+            }
+            .text4 {
+              font-size: 3.1rem;
+            }
+            .text5 {
+              display: none;
+            }
+            .text6 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -275,6 +330,12 @@ const Incio = (props) => {
             }
             .text2 {
               font-size: 1rem;
+              text-align: left;
+            }
+            .text4 {
+              font-size: 3rem;
+            }
+            .text6 {
               text-align: left;
             }
             .icon {

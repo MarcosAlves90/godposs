@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
-import Buto from '../components/buto'
-import Fundo from '../components/fundo'
 
 const NarcisoGelado = (props) => {
   return (
@@ -30,9 +28,12 @@ const NarcisoGelado = (props) => {
         <div className="hero">
           <div className="container1">
             <div className="card">
-              <h1 className="text">Narciso Gelado</h1>
-              <h1 className="text1">&quot;Apenas um grupo&quot;</h1>
-              <span className="text2">
+              <h1 className="text">
+                <span className="text1">Narciso</span>
+                <span className="text2"> Gelado</span>
+              </h1>
+              <h1 className="text3">&quot;Apenas um grupo&quot;</h1>
+              <span className="text4">
                 Narciso Gelado é o nome de um grupo de pessoas que criam e
                 desenvolvem projetos, como o projeto &quot;TCC&quot;, que é
                 resumidamente um plano para a criação de um jogo que vai se
@@ -46,15 +47,22 @@ const NarcisoGelado = (props) => {
                   }}
                 />
               </span>
-              <Link href="/projetos">
-                <a className="link">
-                  <Buto button="Voltar" className="component1"></Buto>
-                </a>
-              </Link>
+              <div className="container2">
+                <Link href="/projetos">
+                  <a className="link button">Voltar</a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="rootClassName1"></Fundo>
+        <div className="container3">
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1627923605750-d1b949006f96?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE5fHxuYXJjaXNzdXN8ZW58MHx8fHwxNjQ2ODc2Njcx&amp;ixlib=rb-1.2.1&amp;w=1000"
+            loading="eager"
+            className="image"
+          />
+        </div>
       </div>
       <style jsx>
         {`
@@ -110,11 +118,24 @@ const NarcisoGelado = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #73cb6e;
+            background-color: #ffaa00;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
           .text1 {
+            color: #e8cb1d;
+            font-family: Righteous;
+            font-weight: 700;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .text2 {
+            font-family: Righteous;
+            font-weight: 700;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .text3 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             text-align: center;
@@ -125,7 +146,7 @@ const NarcisoGelado = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text2 {
+          .text4 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -137,11 +158,50 @@ const NarcisoGelado = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link {
-            display: contents;
+          .container2 {
+            display: flex;
+            position: relative;
           }
-          .component1 {
+          .link {
+            color: var(--dl-color-gray-white);
+            outline: none;
+            font-size: 0.8rem;
+            background: #ffaa00;
+            font-style: normal;
+            transition: 0.3s;
+            font-family: Open Sans;
+            font-weight: 600;
+            line-height: 1.4;
+            padding-top: var(--dl-space-space-triplequarterunit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: 0px;
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            letter-spacing: -0.025rem;
+            padding-bottom: var(--dl-space-space-triplequarterunit);
+            text-transform: uppercase;
             text-decoration: none;
+          }
+          .link:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.1);
+          }
+          .container3 {
+            display: flex;
+            position: relative;
+          }
+          .image {
+            top: 0px;
+            flex: inherit;
+            left: left;
+            right: 0px;
+            width: 902px;
+            height: 100%;
+            opacity: 0.5;
+            position: fixed;
+            object-fit: cover;
+            object-position: right;
           }
           @media (max-width: 991px) {
             .hero {
@@ -165,14 +225,17 @@ const NarcisoGelado = (props) => {
             .text {
               font-size: 3.1rem;
             }
-            .text1 {
+            .text3 {
               display: none;
             }
-            .text2 {
+            .text4 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
               padding-right: 0px;
+            }
+            .image {
+              display: none;
             }
           }
           @media (max-width: 479px) {
@@ -186,7 +249,7 @@ const NarcisoGelado = (props) => {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .text2 {
+            .text4 {
               font-size: 1rem;
             }
           }

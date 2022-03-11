@@ -63,6 +63,7 @@ const CdiceSoturno = (props) => {
             </div>
           </div>
         </div>
+        <h1 className="text8">Notas</h1>
         <Fundo rootClassName="rootClassName6"></Fundo>
       </div>
       <style jsx>
@@ -163,6 +164,19 @@ const CdiceSoturno = (props) => {
           .component1 {
             text-decoration: none;
           }
+          .text8 {
+            color: #e81d24;
+            font-size: 3.25rem;
+            text-align: center;
+            font-family: Righteous;
+            font-weight: 700;
+            line-height: 1.3;
+            text-transform: none;
+            text-decoration: none;
+            background-color: #73cb6e;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
           @media (max-width: 991px) {
             .hero {
               padding-left: var(--dl-space-space-tripleunit);
@@ -204,6 +218,9 @@ const CdiceSoturno = (props) => {
               margin-right: 0px;
               padding-right: 0px;
             }
+            .text8 {
+              font-size: 3.1rem;
+            }
           }
           @media (max-width: 479px) {
             .hero {
@@ -225,6 +242,9 @@ const CdiceSoturno = (props) => {
             }
             .text2 {
               font-size: 1rem;
+            }
+            .text8 {
+              font-size: 3rem;
             }
           }
         `}

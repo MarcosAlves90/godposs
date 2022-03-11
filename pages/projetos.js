@@ -393,13 +393,13 @@ const Projetos = (props) => {
             grid-area: e;
             transition: 0.3s;
             align-items: center;
-            border-color: #6b5a52;
+            border-color: #3d2d4c;
             border-width: 4px;
             margin-right: 10px;
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #e4d2ca;
+            background-color: #d0d0ea;
           }
           .container15:hover {
             cursor: pointer;
@@ -416,7 +416,7 @@ const Projetos = (props) => {
             justify-content: center;
           }
           .text7 {
-            color: #6b5a52;
+            color: #3d2d4c;
             font-size: 1.5rem;
             font-style: normal;
             font-family: Carter One;

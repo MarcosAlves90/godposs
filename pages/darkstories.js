@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
-import Buto from '../components/buto'
-import Fundo from '../components/fundo'
 
 const DarkStories = (props) => {
   return (
@@ -44,15 +42,22 @@ const DarkStories = (props) => {
                   desenvolvida há bastante tempo.
                 </span>
               </span>
-              <Link href="/projetos">
-                <a className="link">
-                  <Buto button="Voltar" className="component1"></Buto>
-                </a>
-              </Link>
+              <div className="container2">
+                <Link href="/projetos">
+                  <a className="link button">Voltar</a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="rootClassName5"></Fundo>
+        <div className="container3">
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDYxfHxwdXJwbGV8ZW58MHx8fHwxNjQ2ODc2OTc5&amp;ixlib=rb-1.2.1&amp;w=1000"
+            loading="eager"
+            className="image"
+          />
+        </div>
       </div>
       <style jsx>
         {`
@@ -108,7 +113,7 @@ const DarkStories = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #73cb6e;
+            background-color: #3d2d4c;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -135,11 +140,50 @@ const DarkStories = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link {
-            display: contents;
+          .container2 {
+            display: flex;
+            position: relative;
           }
-          .component1 {
+          .link {
+            color: var(--dl-color-gray-white);
+            outline: none;
+            font-size: 0.8rem;
+            background: #3d2d4c;
+            font-style: normal;
+            transition: 0.3s;
+            font-family: Open Sans;
+            font-weight: 600;
+            line-height: 1.4;
+            padding-top: var(--dl-space-space-triplequarterunit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: 0px;
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            letter-spacing: -0.025rem;
+            padding-bottom: var(--dl-space-space-triplequarterunit);
+            text-transform: uppercase;
             text-decoration: none;
+          }
+          .link:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.1);
+          }
+          .container3 {
+            display: flex;
+            position: relative;
+          }
+          .image {
+            top: 0px;
+            flex: inherit;
+            left: left;
+            right: 0px;
+            width: 902px;
+            height: 100%;
+            opacity: 0.5;
+            position: fixed;
+            object-fit: cover;
+            object-position: right;
           }
           @media (max-width: 991px) {
             .hero {
@@ -174,6 +218,9 @@ const DarkStories = (props) => {
               text-align: left;
               margin-right: 0px;
               padding-right: 0px;
+            }
+            .image {
+              display: none;
             }
           }
           @media (max-width: 479px) {
