@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
-import Buto from '../components/buto'
+import Ttulo from '../components/ttulo'
+import Voltar from '../components/voltar'
 import Fundo from '../components/fundo'
 
 const HUmanity = (props) => {
@@ -30,9 +31,9 @@ const HUmanity = (props) => {
         <div className="hero">
           <div className="container1">
             <div className="card">
-              <h1 className="text">H:Umanity</h1>
-              <h1 className="text1">&quot;O universo acena para mim&quot;</h1>
-              <span className="text2">
+              <Ttulo></Ttulo>
+              <h1 className="text">&quot;O universo acena para mim&quot;</h1>
+              <span className="text1">
                 H:Umanity (ou Humanidade) é o nome de um rpg (role-playing game)
                 de mesa criado apenas para diversão, mas que possuí uma história
                 boa o suficiente para futuramente ser incluída no projeto Dark
@@ -41,7 +42,7 @@ const HUmanity = (props) => {
               <div className="container2">
                 <Link href="/projetos">
                   <a className="link">
-                    <Buto button="Voltar" className="component1"></Buto>
+                    <Voltar button="Voltar" className="component2"></Voltar>
                   </a>
                 </Link>
               </div>
@@ -96,19 +97,6 @@ const HUmanity = (props) => {
             background-color: hsla(0, 0%, 100%, 0.8);
           }
           .text {
-            color: #e81d24;
-            font-size: 3.25rem;
-            text-align: center;
-            font-family: Righteous;
-            font-weight: 700;
-            line-height: 1.3;
-            text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .text1 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             text-align: center;
@@ -119,7 +107,7 @@ const HUmanity = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text2 {
+          .text1 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -142,7 +130,7 @@ const HUmanity = (props) => {
           .link {
             display: contents;
           }
-          .component1 {
+          .component2 {
             text-decoration: none;
           }
           @media (max-width: 991px) {
@@ -168,12 +156,9 @@ const HUmanity = (props) => {
               align-items: center;
             }
             .text {
-              font-size: 3.1rem;
-            }
-            .text1 {
               display: none;
             }
-            .text2 {
+            .text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -191,10 +176,7 @@ const HUmanity = (props) => {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .text {
-              font-size: 3rem;
-            }
-            .text2 {
+            .text1 {
               font-size: 1rem;
             }
           }

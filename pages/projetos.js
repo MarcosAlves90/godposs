@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import Ttulo from '../components/ttulo'
 import Fundo from '../components/fundo'
 
 const Projetos = (props) => {
@@ -29,14 +30,14 @@ const Projetos = (props) => {
         <div className="hero">
           <div className="container01">
             <div className="card">
-              <h1 className="text">Projetos</h1>
-              <h1 className="text1">Feitos com carinho</h1>
+              <Ttulo rootClassName="rootClassName4" heading="Projetos"></Ttulo>
+              <h1 className="text">Feitos com carinho</h1>
               <div className="container02">
                 <Link href="/codicesoturno">
                   <a className="link">
                     <div className="container03">
                       <div className="container04">
-                        <h1 className="text2"> Códice Soturno</h1>
+                        <h1 className="text1"> Códice Soturno</h1>
                       </div>
                     </div>
                   </a>
@@ -45,7 +46,7 @@ const Projetos = (props) => {
                   <a className="link1">
                     <div className="container05">
                       <div className="container06">
-                        <h1 className="text3">White Stories</h1>
+                        <h1 className="text2">White Stories</h1>
                       </div>
                     </div>
                   </a>
@@ -56,7 +57,7 @@ const Projetos = (props) => {
                   <a className="link2">
                     <div className="container08">
                       <div className="container09">
-                        <h1 className="text4">H:umanity</h1>
+                        <h1 className="text3">H:umanity</h1>
                       </div>
                     </div>
                   </a>
@@ -65,7 +66,7 @@ const Projetos = (props) => {
                   <a className="link3">
                     <div className="container10">
                       <div className="container11">
-                        <h1 className="text5">Hysax</h1>
+                        <h1 className="text4">Hysax</h1>
                       </div>
                     </div>
                   </a>
@@ -76,7 +77,7 @@ const Projetos = (props) => {
                   <a className="link4">
                     <div className="container13">
                       <div className="container14">
-                        <h1 className="text6">Narciso Gelado</h1>
+                        <h1 className="text5">Narciso Gelado</h1>
                       </div>
                     </div>
                   </a>
@@ -85,7 +86,7 @@ const Projetos = (props) => {
                   <a className="link5">
                     <div className="container15">
                       <div className="container16">
-                        <h1 className="text7">Dark Stories</h1>
+                        <h1 className="text6">Dark Stories</h1>
                       </div>
                     </div>
                   </a>
@@ -143,19 +144,6 @@ const Projetos = (props) => {
             background-color: hsla(0, 0%, 100%, 0.8);
           }
           .text {
-            color: #e81d24;
-            font-size: 3.25rem;
-            text-align: center;
-            font-family: Righteous;
-            font-weight: 700;
-            line-height: 1.3;
-            text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .text1 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             text-align: center;
@@ -207,7 +195,7 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text2 {
+          .text1 {
             color: #ea885e;
             font-size: 1.5rem;
             font-style: normal;
@@ -224,13 +212,13 @@ const Projetos = (props) => {
             grid-area: f;
             transition: 0.3s;
             align-items: center;
-            border-color: #5e5e83;
+            border-color: #BDBDD4;
             border-width: 4px;
             margin-right: 10px;
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #d0d0ea;
+            background-color: #ffffff;
           }
           .container05:hover {
             cursor: pointer;
@@ -246,8 +234,8 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text3 {
-            color: #5e5e83;
+          .text2 {
+            color: #bdbdd4;
             font-size: 1.5rem;
             font-style: normal;
             font-family: Roboto Slab;
@@ -292,7 +280,7 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text4 {
+          .text3 {
             color: #5198a6;
             font-size: 1.7rem;
             font-style: normal;
@@ -331,7 +319,7 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text5 {
+          .text4 {
             color: #e2a1a1;
             font-size: 1.5rem;
             font-style: normal;
@@ -354,13 +342,13 @@ const Projetos = (props) => {
             grid-area: c;
             transition: 0.3s;
             align-items: center;
-            border-color: #8699e8;
+            border-color: #e8d075;
             border-width: 4px;
             margin-right: 10px;
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #d2d9f9;
+            background-color: #fffce8;
           }
           .container13:hover {
             cursor: pointer;
@@ -376,8 +364,8 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text6 {
-            color: #8699e8;
+          .text5 {
+            color: #E8D075;
             font-size: 1.6rem;
             font-style: normal;
             font-family: Righteous;
@@ -393,7 +381,7 @@ const Projetos = (props) => {
             grid-area: e;
             transition: 0.3s;
             align-items: center;
-            border-color: #3d2d4c;
+            border-color: #7e6892;
             border-width: 4px;
             margin-right: 10px;
             margin-bottom: 10px;
@@ -415,8 +403,8 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text7 {
-            color: #3d2d4c;
+          .text6 {
+            color: #7E6892;
             font-size: 1.5rem;
             font-style: normal;
             font-family: Carter One;
@@ -435,6 +423,9 @@ const Projetos = (props) => {
               width: 100%;
               height: 458px;
             }
+            .text1 {
+              text-align: center;
+            }
             .text2 {
               text-align: center;
             }
@@ -448,9 +439,6 @@ const Projetos = (props) => {
               text-align: center;
             }
             .text6 {
-              text-align: center;
-            }
-            .text7 {
               text-align: center;
             }
           }
@@ -466,7 +454,7 @@ const Projetos = (props) => {
               position: absolute;
               align-items: center;
             }
-            .text1 {
+            .text {
               width: auto;
               height: auto;
               display: none;
@@ -474,38 +462,38 @@ const Projetos = (props) => {
             .container03 {
               width: auto;
             }
-            .text2 {
+            .text1 {
               font-size: 1.3rem;
             }
             .container05 {
               width: auto;
             }
-            .text3 {
+            .text2 {
               font-size: 1.3rem;
             }
             .container08 {
               width: auto;
             }
-            .text4 {
+            .text3 {
               font-size: 1.3rem;
             }
             .container10 {
               width: auto;
             }
-            .text5 {
+            .text4 {
               font-size: 1.3rem;
             }
             .container13 {
               width: 185px;
             }
-            .text6 {
+            .text5 {
               width: 165px;
               font-size: 1.3rem;
             }
             .container15 {
               width: auto;
             }
-            .text7 {
+            .text6 {
               font-size: 1.3rem;
             }
           }
@@ -529,9 +517,6 @@ const Projetos = (props) => {
             .text {
               display: none;
             }
-            .text1 {
-              display: none;
-            }
             .container02 {
               width: auto;
               height: auto;
@@ -539,14 +524,14 @@ const Projetos = (props) => {
             .container03 {
               height: auto;
             }
-            .text2 {
+            .text1 {
               font-size: 1.2rem;
             }
             .container05 {
               width: auto;
               height: auto;
             }
-            .text3 {
+            .text2 {
               font-size: 1.2rem;
             }
             .container07 {
@@ -557,14 +542,14 @@ const Projetos = (props) => {
               width: 199px;
               height: 68px;
             }
-            .text4 {
+            .text3 {
               font-size: 1.2rem;
             }
             .container10 {
               width: 90px;
               height: auto;
             }
-            .text5 {
+            .text4 {
               font-size: 1.2rem;
             }
             .container12 {
@@ -575,13 +560,13 @@ const Projetos = (props) => {
               width: 149px;
               height: auto;
             }
-            .text6 {
+            .text5 {
               font-size: 1.2rem;
             }
             .container15 {
               height: auto;
             }
-            .text7 {
+            .text6 {
               font-size: 1.2rem;
             }
           }

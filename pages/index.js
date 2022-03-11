@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import Ttulo from '../components/ttulo'
 import Fundo from '../components/fundo'
 
 const Incio = (props) => {
@@ -28,9 +29,12 @@ const Incio = (props) => {
         <div className="hero">
           <div className="container1">
             <div className="card">
-              <h1 className="text">God Poseidon</h1>
-              <h1 className="text1">&quot;Tem algo que não se encaixa&quot;</h1>
-              <span className="text2">
+              <Ttulo
+                rootClassName="rootClassName2"
+                heading="God Poseidon"
+              ></Ttulo>
+              <h1 className="text">&quot;Tem algo que não se encaixa&quot;</h1>
+              <span className="text1">
                 <span>
                   Olá, sou aquele que muitos chamam de Via. Eu sempre tive
                   muitos projetos, mas eu nunca apresentei eles para as pessoas,
@@ -41,12 +45,6 @@ const Incio = (props) => {
                   que as pessoas, quando souberem o intuito de cada um, se
                   interessem pelo menos um pouco por eles.
                 </span>
-              </span>
-              <h1 className="text4">Anotações</h1>
-              <h1 className="text5">&quot;Nós costumávamos conversar&quot;</h1>
-              <span className="text6">
-                09/03/22 &gt; Preciso continuar escrevendo as histórias do
-                projeto Dark Stories, mas não sei como continuar.
               </span>
               <div className="container2">
                 <a
@@ -111,7 +109,7 @@ const Incio = (props) => {
             position: relative;
             max-width: 1320px;
             min-height: 85vh;
-            align-items: flex-end;
+            align-items: flex-start;
             flex-direction: column;
             justify-content: center;
           }
@@ -124,73 +122,24 @@ const Incio = (props) => {
             align-self: flex-start;
             box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
-            margin-top: 200px;
+            margin-top: 50px;
             align-items: flex-start;
             flex-direction: column;
             backdrop-filter: saturate(200%) blur(30px);
             background-color: hsla(0, 0%, 100%, 0.8);
           }
           .text {
-            color: #ff6900;
-            font-size: 3.25rem;
+            color: var(--dl-color-secondary-700);
+            font-size: 2rem;
             text-align: center;
-            font-family: Righteous;
+            font-family: Open Sans;
             font-weight: 700;
             line-height: 1.3;
+            margin-bottom: var(--dl-space-space-unitandahalfunit);
             text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            text-decoration: overline;
           }
           .text1 {
-            color: var(--dl-color-secondary-700);
-            font-size: 2rem;
-            text-align: center;
-            font-family: Open Sans;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: var(--dl-space-space-unitandahalfunit);
-            text-transform: none;
-            text-decoration: overline;
-          }
-          .text2 {
-            color: var(--dl-color-secondary-600);
-            font-size: 1.25rem;
-            font-family: Open Sans;
-            font-weight: 400;
-            line-height: 1.625;
-            margin-right: var(--dl-space-space-tripleunit);
-            margin-bottom: var(--dl-space-space-unit);
-            padding-right: var(--dl-space-space-tripleunit);
-            text-transform: none;
-            text-decoration: none;
-          }
-          .text4 {
-            color: #e81d24;
-            font-size: 3.25rem;
-            text-align: center;
-            font-family: Righteous;
-            font-weight: 700;
-            line-height: 1.3;
-            text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .text5 {
-            color: var(--dl-color-secondary-700);
-            font-size: 2rem;
-            text-align: center;
-            font-family: Open Sans;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: var(--dl-space-space-unitandahalfunit);
-            text-transform: none;
-            text-decoration: overline;
-          }
-          .text6 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -214,7 +163,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon {
-            fill: #73cb6e;
+            fill: #3d2d4c;
             width: 90px;
             height: 80px;
             align-self: stretch;
@@ -230,7 +179,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon2 {
-            fill: #73cb6e;
+            fill: #3d2d4c;
             width: 90px;
             height: 80px;
             transition: 0.3s;
@@ -245,7 +194,7 @@ const Incio = (props) => {
             display: contents;
           }
           .icon4 {
-            fill: #73cb6e;
+            fill: #3d2d4c;
             width: 90px;
             height: 80px;
             transition: 0.3s;
@@ -280,24 +229,9 @@ const Incio = (props) => {
               align-items: center;
             }
             .text {
-              font-size: 3.1rem;
+              display: none;
             }
             .text1 {
-              display: none;
-            }
-            .text2 {
-              font-size: 1.1rem;
-              text-align: left;
-              margin-right: 0px;
-              padding-right: 0px;
-            }
-            .text4 {
-              font-size: 3.1rem;
-            }
-            .text5 {
-              display: none;
-            }
-            .text6 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -323,19 +257,10 @@ const Incio = (props) => {
               position: absolute;
             }
             .text {
-              font-size: 3rem;
-            }
-            .text1 {
               display: none;
             }
-            .text2 {
+            .text1 {
               font-size: 1rem;
-              text-align: left;
-            }
-            .text4 {
-              font-size: 3rem;
-            }
-            .text6 {
               text-align: left;
             }
             .icon {

@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
-import Buto from '../components/buto'
+import Ttulo from '../components/ttulo'
+import Voltar from '../components/voltar'
 import Fundo from '../components/fundo'
 
 const CdiceSoturno = (props) => {
@@ -30,11 +31,14 @@ const CdiceSoturno = (props) => {
         <div className="hero">
           <div className="container1">
             <div className="card">
-              <h1 className="text">Códice Soturno</h1>
-              <h1 className="text1">
+              <Ttulo
+                rootClassName="rootClassName"
+                heading="Códice Soturno"
+              ></Ttulo>
+              <h1 className="text">
                 &quot;Muito cuidado com o que deseja&quot;
               </h1>
-              <span className="text2">
+              <span className="text1">
                 <span>
                   O Códice Soturno é uma comunidade voltada a construção de
                   programas e aprendizado na área de programação. Nada que é
@@ -56,14 +60,13 @@ const CdiceSoturno = (props) => {
               <div className="container2">
                 <Link href="/projetos">
                   <a className="link">
-                    <Buto button="Voltar" className="component1"></Buto>
+                    <Voltar button="Voltar" className="component2"></Voltar>
                   </a>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <h1 className="text8">Notas</h1>
         <Fundo rootClassName="rootClassName6"></Fundo>
       </div>
       <style jsx>
@@ -115,19 +118,6 @@ const CdiceSoturno = (props) => {
             background-color: hsla(0, 0%, 100%, 0.8);
           }
           .text {
-            color: #e81d24;
-            font-size: 3.25rem;
-            text-align: center;
-            font-family: Righteous;
-            font-weight: 700;
-            line-height: 1.3;
-            text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .text1 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             text-align: center;
@@ -138,7 +128,7 @@ const CdiceSoturno = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text2 {
+          .text1 {
             color: var(--dl-color-secondary-600);
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -161,21 +151,8 @@ const CdiceSoturno = (props) => {
           .link {
             display: contents;
           }
-          .component1 {
+          .component2 {
             text-decoration: none;
-          }
-          .text8 {
-            color: #e81d24;
-            font-size: 3.25rem;
-            text-align: center;
-            font-family: Righteous;
-            font-weight: 700;
-            line-height: 1.3;
-            text-transform: none;
-            text-decoration: none;
-            background-color: #73cb6e;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
           }
           @media (max-width: 991px) {
             .hero {
@@ -207,19 +184,13 @@ const CdiceSoturno = (props) => {
               align-items: center;
             }
             .text {
-              font-size: 3.1rem;
-            }
-            .text1 {
               display: none;
             }
-            .text2 {
+            .text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
               padding-right: 0px;
-            }
-            .text8 {
-              font-size: 3.1rem;
             }
           }
           @media (max-width: 479px) {
@@ -237,14 +208,8 @@ const CdiceSoturno = (props) => {
               padding: var(--dl-space-space-unit);
               position: absolute;
             }
-            .text {
-              font-size: 3rem;
-            }
-            .text2 {
+            .text1 {
               font-size: 1rem;
-            }
-            .text8 {
-              font-size: 3rem;
             }
           }
         `}

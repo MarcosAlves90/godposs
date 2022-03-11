@@ -46,7 +46,7 @@ const Fundo = (props) => {
 Fundo.defaultProps = {
   image_alt: 'image',
   image_src:
-    'https://images.unsplash.com/photo-1608474123141-fe3bfaa64e67?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxhZXN0aGV0aWMlMjBncmVlbnxlbnwwfHx8fDE2NDY3MTQwOTE&ixlib=rb-1.2.1&w=1000',
+    'https://images.unsplash.com/photo-1621246159024-e53b1d25fc1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxwdXJwbGV8ZW58MHx8fHwxNjQ2OTc0MDU0&ixlib=rb-1.2.1&w=1000',
   rootClassName: '',
 }
 

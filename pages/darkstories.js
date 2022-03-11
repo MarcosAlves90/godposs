@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import Fundo from '../components/fundo'
 
 const DarkStories = (props) => {
   return (
@@ -49,14 +50,7 @@ const DarkStories = (props) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container3">
-          <img
-            alt="image"
-            src="https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDYxfHxwdXJwbGV8ZW58MHx8fHwxNjQ2ODc2OTc5&amp;ixlib=rb-1.2.1&amp;w=1000"
-            loading="eager"
-            className="image"
-          />
+          <Fundo rootClassName="rootClassName5"></Fundo>
         </div>
       </div>
       <style jsx>
@@ -169,22 +163,6 @@ const DarkStories = (props) => {
             opacity: 0.5;
             transform: scale(1.1);
           }
-          .container3 {
-            display: flex;
-            position: relative;
-          }
-          .image {
-            top: 0px;
-            flex: inherit;
-            left: left;
-            right: 0px;
-            width: 902px;
-            height: 100%;
-            opacity: 0.5;
-            position: fixed;
-            object-fit: cover;
-            object-position: right;
-          }
           @media (max-width: 991px) {
             .hero {
               padding-left: var(--dl-space-space-tripleunit);
@@ -218,9 +196,6 @@ const DarkStories = (props) => {
               text-align: left;
               margin-right: 0px;
               padding-right: 0px;
-            }
-            .image {
-              display: none;
             }
           }
           @media (max-width: 479px) {
