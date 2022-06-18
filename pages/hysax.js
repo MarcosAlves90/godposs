@@ -10,7 +10,7 @@ import Fundo from '../components/fundo'
 const Hysax = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="hysax-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -22,37 +22,39 @@ const Hysax = (props) => {
             property="og:description"
             content="Um portfólio do Via Charisma. Entre e veja alguns projetos interessantes."
           />
-          <meta
-            property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/3b3261eb-e6ce-49b7-957c-cfef4b3a71d0?org_if_sml=1"
-          />
         </Head>
         <Header></Header>
-        <div className="hero">
-          <div className="container1">
-            <div className="card">
-              <Ttulo rootClassName="rootClassName1" heading="Hysax"></Ttulo>
-              <h1 className="text">Interação e socialização</h1>
-              <span className="text1">
+        <div className="hysax-hero">
+          <div className="hysax-container1">
+            <div className="hysax-card">
+              <Ttulo
+                heading="HYSAX"
+                rootClassName="ttulo-root-class-name1"
+              ></Ttulo>
+              <h1 className="hysax-text">Interação e socialização</h1>
+              <span className="hysax-text1">
                 Hysax é o nome de um grupo de projetos baseados na interação
                 social entre várias categorias de pessoas em diferentes redes
                 sociais. Por enquanto, o maior projeto dentro desse grupo é o
                 Hysax: Café, que é um servidor no discord com regras rígidas e
                 um futuro promissor.
               </span>
-              <div className="container2">
+              <div className="hysax-container2">
                 <Link href="/projetos">
-                  <a className="link">
-                    <Voltar button="Voltar" className="component2"></Voltar>
+                  <a className="hysax-link">
+                    <Voltar
+                      button="Voltar"
+                      className="hysax-component2"
+                    ></Voltar>
                   </a>
                 </Link>
                 <a
-                  href="https://discord.gg/4zHQHWeFff"
+                  href="https://disboard.org/server/929758220686331976"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="link1 button"
+                  className="hysax-link1 button"
                 >
-                  <span className="text2">
+                  <span className="hysax-text2">
                     <span>Entrar no hysax: café</span>
                   </span>
                 </a>
@@ -60,11 +62,11 @@ const Hysax = (props) => {
             </div>
           </div>
         </div>
-        <Fundo rootClassName="rootClassName3"></Fundo>
+        <Fundo rootClassName="fundo-root-class-name3"></Fundo>
       </div>
       <style jsx>
         {`
-          .container {
+          .hysax-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -72,7 +74,7 @@ const Hysax = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero {
+          .hysax-hero {
             width: 100%;
             height: 800px;
             display: flex;
@@ -81,7 +83,7 @@ const Hysax = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .container1 {
+          .hysax-container1 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -92,7 +94,7 @@ const Hysax = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .card {
+          .hysax-card {
             flex: 0 0 auto;
             width: 996px;
             display: flex;
@@ -103,12 +105,13 @@ const Hysax = (props) => {
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
             margin-top: var(--dl-space-space-tripleunit);
             align-items: flex-start;
+            border-radius: var(--dl-radius-radius-radius1);
             flex-direction: column;
             backdrop-filter: saturate(200%) blur(30px);
-            background-color: hsla(0, 0%, 100%, 0.8);
+            background-color: rgba(51, 48, 48, 0.8);
           }
-          .text {
-            color: var(--dl-color-secondary-700);
+          .hysax-text {
+            color: #ffffff;
             font-size: 2rem;
             text-align: center;
             font-family: Open Sans;
@@ -118,8 +121,8 @@ const Hysax = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text1 {
-            color: var(--dl-color-secondary-600);
+          .hysax-text1 {
+            color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
             font-weight: 400;
@@ -130,7 +133,7 @@ const Hysax = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .container2 {
+          .hysax-container2 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -138,17 +141,18 @@ const Hysax = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .link {
+          .hysax-link {
             display: contents;
           }
-          .component2 {
+          .hysax-component2 {
             text-decoration: none;
           }
-          .link1 {
-            color: var(--dl-color-gray-white);
+          .hysax-link1 {
+            color: #f5d2d2;
+            height: auto;
             outline: none;
             font-size: 0.75rem;
-            background: #b36f60;
+            background: #d49789;
             font-style: normal;
             transition: 0.3s;
             font-family: Open Sans;
@@ -156,52 +160,53 @@ const Hysax = (props) => {
             line-height: 1.4;
             margin-left: 15px;
             padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: #4c4d50;
-            border-width: 0px;
+            border-color: #f5d2d2;
+            border-width: 3px;
             padding-left: var(--dl-space-space-unitandahalfunit);
-            border-radius: 0px;
+            border-radius: var(--dl-radius-radius-radius1);
             padding-right: var(--dl-space-space-unitandahalfunit);
             letter-spacing: -0.025rem;
             padding-bottom: var(--dl-space-space-triplequarterunit);
             text-transform: uppercase;
             text-decoration: none;
+            background-color: rgba(255, 255, 255, 0);
           }
-          .link1:hover {
+          .hysax-link1:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.1);
           }
-          .text2 {
+          .hysax-text2 {
             font-size: 0.8rem;
             font-style: normal;
             font-weight: 600;
           }
           @media (max-width: 991px) {
-            .hero {
+            .hysax-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .container1 {
+            .hysax-container1 {
               max-width: 960px;
             }
-            .card {
+            .hysax-card {
               width: 100%;
             }
           }
           @media (max-width: 767px) {
-            .hero {
+            .hysax-hero {
               height: 654px;
             }
-            .card {
+            .hysax-card {
               top: 79px;
               right: 0px;
               position: absolute;
               align-items: center;
             }
-            .text {
+            .hysax-text {
               display: none;
             }
-            .text1 {
+            .hysax-text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -209,17 +214,17 @@ const Hysax = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .hero {
+            .hysax-hero {
               height: 644px;
             }
-            .container1 {
+            .hysax-container1 {
               height: 809px;
             }
-            .card {
+            .hysax-card {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .text1 {
+            .hysax-text1 {
               font-size: 1rem;
             }
           }

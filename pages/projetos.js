@@ -9,7 +9,7 @@ import Fundo from '../components/fundo'
 const Projetos = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="projetos-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -21,72 +21,97 @@ const Projetos = (props) => {
             property="og:description"
             content="Um portfólio do Via Charisma. Entre e veja alguns projetos interessantes."
           />
-          <meta
-            property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/3b3261eb-e6ce-49b7-957c-cfef4b3a71d0?org_if_sml=1"
-          />
         </Head>
         <Header></Header>
-        <div className="hero">
-          <div className="container01">
-            <div className="card">
-              <Ttulo rootClassName="rootClassName4" heading="Projetos"></Ttulo>
-              <h1 className="text">Feitos com carinho</h1>
-              <div className="container02">
+        <div className="projetos-hero">
+          <div className="projetos-container01">
+            <div className="projetos-card">
+              <Ttulo
+                heading="PROJETOS"
+                rootClassName="ttulo-root-class-name4"
+              ></Ttulo>
+              <h1 className="projetos-text">Feitos com carinho</h1>
+              <div className="projetos-container02">
                 <Link href="/codicesoturno">
-                  <a className="link">
-                    <div className="container03">
-                      <div className="container04">
-                        <h1 className="text1"> Códice Soturno</h1>
+                  <a className="projetos-link">
+                    <div className="projetos-container03">
+                      <div className="projetos-container04">
+                        <h1 className="projetos-text01">
+                          CÓDICE
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </h1>
                       </div>
                     </div>
                   </a>
                 </Link>
-                <Link href="/whitestories">
-                  <a className="link1">
-                    <div className="container05">
-                      <div className="container06">
-                        <h1 className="text2">White Stories</h1>
+                <Link href="/mirrorveins">
+                  <a className="projetos-link1">
+                    <div className="projetos-container05">
+                      <div className="projetos-container06">
+                        <h1 className="projetos-text02">MIRROR VEINS</h1>
                       </div>
                     </div>
                   </a>
                 </Link>
+                <div className="projetos-container07">
+                  <div className="projetos-container08">
+                    <h1 className="projetos-text03">X</h1>
+                  </div>
+                </div>
               </div>
-              <div className="container07">
-                <Link href="/humanity">
-                  <a className="link2">
-                    <div className="container08">
-                      <div className="container09">
-                        <h1 className="text3">H:umanity</h1>
-                      </div>
-                    </div>
-                  </a>
-                </Link>
-                <Link href="/hysax">
-                  <a className="link3">
-                    <div className="container10">
-                      <div className="container11">
-                        <h1 className="text4">Hysax</h1>
-                      </div>
-                    </div>
-                  </a>
-                </Link>
-              </div>
-              <div className="container12">
+              <div className="projetos-container09">
                 <Link href="/narcisogelado">
-                  <a className="link4">
-                    <div className="container13">
-                      <div className="container14">
-                        <h1 className="text5">Narciso Gelado</h1>
+                  <a className="projetos-link2">
+                    <div className="projetos-container10">
+                      <div className="projetos-container11">
+                        <h1 className="projetos-text04">NARCISO</h1>
                       </div>
                     </div>
                   </a>
                 </Link>
                 <Link href="/darkstories">
-                  <a className="link5">
-                    <div className="container15">
-                      <div className="container16">
-                        <h1 className="text6">Dark Stories</h1>
+                  <a className="projetos-link3">
+                    <div className="projetos-container12">
+                      <div className="projetos-container13">
+                        <h1 className="projetos-text05">Dark Stories</h1>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+                <div className="projetos-container14">
+                  <div className="projetos-container15">
+                    <h1 className="projetos-text06">X</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="projetos-container16">
+                <Link href="/humanity">
+                  <a className="projetos-link4">
+                    <div className="projetos-container17">
+                      <div className="projetos-container18">
+                        <h1 className="projetos-text07">H:UMANITY</h1>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/hysax">
+                  <a className="projetos-link5">
+                    <div className="projetos-container19">
+                      <div className="projetos-container20">
+                        <h1 className="projetos-text08">HYSAX</h1>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/crcctd">
+                  <a className="projetos-link6">
+                    <div className="projetos-container21">
+                      <div className="projetos-container22">
+                        <h1 className="projetos-text09">CRCCTD</h1>
                       </div>
                     </div>
                   </a>
@@ -95,11 +120,11 @@ const Projetos = (props) => {
             </div>
           </div>
         </div>
-        <Fundo rootClassName="rootClassName"></Fundo>
+        <Fundo rootClassName="fundo-root-class-name"></Fundo>
       </div>
       <style jsx>
         {`
-          .container {
+          .projetos-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -107,7 +132,7 @@ const Projetos = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero {
+          .projetos-hero {
             width: 100%;
             height: 694px;
             display: flex;
@@ -116,7 +141,7 @@ const Projetos = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .container01 {
+          .projetos-container01 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -127,7 +152,7 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .card {
+          .projetos-card {
             width: 996px;
             height: 456px;
             display: flex;
@@ -139,12 +164,13 @@ const Projetos = (props) => {
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
             margin-top: var(--dl-space-space-tripleunit);
             align-items: flex-start;
+            border-radius: var(--dl-radius-radius-radius1);
             flex-direction: column;
             backdrop-filter: saturate(200%) blur(30px);
-            background-color: hsla(0, 0%, 100%, 0.8);
+            background-color: rgba(51, 48, 48, 0.8);
           }
-          .text {
-            color: var(--dl-color-secondary-700);
+          .projetos-text {
+            color: #ffffff;
             font-size: 2rem;
             text-align: center;
             font-family: Open Sans;
@@ -154,17 +180,17 @@ const Projetos = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .container02 {
+          .projetos-container02 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .link {
+          .projetos-link {
             display: contents;
           }
-          .container03 {
+          .projetos-container03 {
             width: 262px;
             height: 68px;
             display: flex;
@@ -173,19 +199,19 @@ const Projetos = (props) => {
             transition: 0.3s;
             align-items: center;
             border-color: #ea885e;
-            border-width: 4px;
+            border-width: 3px;
             margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #fdeee8;
           }
-          .container03:hover {
+          .projetos-container03:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.03);
           }
-          .container04 {
+          .projetos-container04 {
             width: 100%;
             height: 100%;
             display: flex;
@@ -195,37 +221,37 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text1 {
+          .projetos-text01 {
             color: #ea885e;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-style: normal;
-            font-family: Fugaz One;
+            font-family: NMSGeoSans;
             font-weight: 700;
           }
-          .link1 {
+          .projetos-link1 {
             display: contents;
           }
-          .container05 {
+          .projetos-container05 {
             width: 262px;
             height: 68px;
             display: flex;
             grid-area: f;
             transition: 0.3s;
             align-items: center;
-            border-color: #BDBDD4;
-            border-width: 4px;
+            border-color: #bdbdd4;
+            border-width: 3px;
             margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #ffffff;
           }
-          .container05:hover {
+          .projetos-container05:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.03);
           }
-          .container06 {
+          .projetos-container06 {
             width: 100%;
             height: 100%;
             display: flex;
@@ -234,108 +260,60 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text2 {
+          .projetos-text02 {
             color: #bdbdd4;
+            font-size: 2rem;
+            font-style: normal;
+            font-family: NMSGeoSans;
+            font-weight: 700;
+          }
+          .projetos-container07 {
+            width: 262px;
+            height: 68px;
+            display: flex;
+            grid-area: e;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #b0b0bd;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+          }
+          .projetos-container07:hover {
+            cursor: progress;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container08 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            justify-content: center;
+          }
+          .projetos-text03 {
+            color: #b0b0bd;
             font-size: 1.5rem;
             font-style: normal;
-            font-family: Roboto Slab;
+            font-family: NMSGeoSans;
             font-weight: 800;
           }
-          .container07 {
+          .projetos-container09 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .link2 {
+          .projetos-link2 {
             display: contents;
           }
-          .container08 {
-            width: 262px;
-            height: 68px;
-            display: flex;
-            grid-area: b;
-            transition: 0.3s;
-            align-items: center;
-            border-color: #5198a6;
-            border-width: 4px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            flex-direction: column;
-            text-decoration: none;
-            background-color: #c8e4ea;
-          }
-          .container08:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            transform: scale(1.03);
-          }
-          .container09 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .text3 {
-            color: #5198a6;
-            font-size: 1.7rem;
-            font-style: normal;
-            font-family: Rubik Mono One;
-            font-weight: 700;
-          }
-          .link3 {
-            display: contents;
-          }
-          .container10 {
-            width: 262px;
-            height: 68px;
-            display: flex;
-            grid-area: d;
-            transition: 0.3s;
-            align-items: center;
-            border-color: #e2a1a1;
-            border-width: 4px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            flex-direction: column;
-            text-decoration: none;
-            background-color: #f5dbdb;
-          }
-          .container10:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            transform: scale(1.03);
-          }
-          .container11 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            padding: var(--dl-space-space-unit);
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .text4 {
-            color: #e2a1a1;
-            font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 700;
-          }
-          .container12 {
-            flex: 0 0 auto;
-            width: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-          }
-          .link4 {
-            display: contents;
-          }
-          .container13 {
+          .projetos-container10 {
             width: 262px;
             height: 68px;
             display: flex;
@@ -343,38 +321,41 @@ const Projetos = (props) => {
             transition: 0.3s;
             align-items: center;
             border-color: #e8d075;
-            border-width: 4px;
+            border-width: 3px;
             margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #fffce8;
           }
-          .container13:hover {
+          .projetos-container10:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.03);
           }
-          .container14 {
+          .projetos-container11 {
             width: 100%;
             height: 100%;
             display: flex;
             padding: 32px;
             align-items: center;
+            padding-right: 32px;
             flex-direction: column;
             justify-content: center;
           }
-          .text5 {
-            color: #E8D075;
-            font-size: 1.6rem;
+          .projetos-text04 {
+            color: #e8d075;
+            width: 222px;
+            font-size: 2rem;
             font-style: normal;
-            font-family: Righteous;
-            font-weight: 400;
+            text-align: center;
+            font-family: NMSGeoSans;
+            font-weight: 700;
           }
-          .link5 {
+          .projetos-link3 {
             display: contents;
           }
-          .container15 {
+          .projetos-container12 {
             width: 262px;
             height: 68px;
             display: flex;
@@ -382,19 +363,19 @@ const Projetos = (props) => {
             transition: 0.3s;
             align-items: center;
             border-color: #7e6892;
-            border-width: 4px;
+            border-width: 3px;
             margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
             margin-bottom: 10px;
             flex-direction: column;
             text-decoration: none;
-            background-color: #d0d0ea;
           }
-          .container15:hover {
+          .projetos-container12:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.03);
           }
-          .container16 {
+          .projetos-container13 {
             width: 100%;
             height: 100%;
             display: flex;
@@ -403,50 +384,219 @@ const Projetos = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .text6 {
-            color: #7E6892;
-            font-size: 1.5rem;
+          .projetos-text05 {
+            color: #7e6892;
+            font-size: 2rem;
             font-style: normal;
-            font-family: Carter One;
-            font-weight: 400;
+            font-family: NMSGeoSans;
+            font-weight: 700;
             text-transform: uppercase;
           }
+          .projetos-container14 {
+            width: 262px;
+            height: 68px;
+            display: flex;
+            grid-area: e;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #b0b0bd;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+          }
+          .projetos-container14:hover {
+            cursor: progress;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container15 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .projetos-text06 {
+            color: #b0b0bd;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-family: NMSGeoSans;
+            font-weight: 800;
+          }
+          .projetos-container16 {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+          .projetos-link4 {
+            display: contents;
+          }
+          .projetos-container17 {
+            width: 262px;
+            height: 68px;
+            display: flex;
+            grid-area: b;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #5198a6;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+            text-decoration: none;
+          }
+          .projetos-container17:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container18 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .projetos-text07 {
+            color: #5198a6;
+            font-size: 2rem;
+            font-style: normal;
+            font-family: NMSGeoSans;
+            font-weight: 700;
+          }
+          .projetos-link5 {
+            display: contents;
+          }
+          .projetos-container19 {
+            width: 262px;
+            height: 68px;
+            display: flex;
+            grid-area: d;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #e2a1a1;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+            text-decoration: none;
+          }
+          .projetos-container19:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container20 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .projetos-text08 {
+            color: #e2a1a1;
+            font-size: 2rem;
+            font-style: normal;
+            font-family: NMSGeoSans;
+            font-weight: 700;
+          }
+          .projetos-link6 {
+            display: contents;
+          }
+          .projetos-container21 {
+            width: 262px;
+            height: 68px;
+            display: flex;
+            grid-area: d;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #798c69;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+            text-decoration: none;
+          }
+          .projetos-container21:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container22 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            justify-content: center;
+          }
+          .projetos-text09 {
+            color: #798c69;
+            font-size: 2rem;
+            font-style: normal;
+            font-family: NMSGeoSans;
+            font-weight: 700;
+          }
           @media (max-width: 991px) {
-            .hero {
+            .projetos-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .container01 {
+            .projetos-container01 {
               max-width: 960px;
             }
-            .card {
+            .projetos-card {
               width: 100%;
               height: 458px;
             }
-            .text1 {
+            .projetos-text01 {
               text-align: center;
             }
-            .text2 {
+            .projetos-text02 {
               text-align: center;
             }
-            .text3 {
+            .projetos-text03 {
               text-align: center;
             }
-            .text4 {
+            .projetos-text04 {
               text-align: center;
             }
-            .text5 {
+            .projetos-text05 {
               text-align: center;
             }
-            .text6 {
+            .projetos-text06 {
+              text-align: center;
+            }
+            .projetos-text07 {
+              text-align: center;
+            }
+            .projetos-text08 {
+              text-align: center;
+            }
+            .projetos-text09 {
               text-align: center;
             }
           }
           @media (max-width: 767px) {
-            .hero {
+            .projetos-hero {
               height: 519px;
             }
-            .card {
+            .projetos-card {
               top: 65px;
               left: 0px;
               width: 100%;
@@ -454,58 +604,76 @@ const Projetos = (props) => {
               position: absolute;
               align-items: center;
             }
-            .text {
+            .projetos-text {
               width: auto;
               height: auto;
               display: none;
             }
-            .container03 {
+            .projetos-container03 {
               width: auto;
             }
-            .text1 {
+            .projetos-text01 {
               font-size: 1.3rem;
             }
-            .container05 {
+            .projetos-container05 {
               width: auto;
             }
-            .text2 {
+            .projetos-text02 {
               font-size: 1.3rem;
             }
-            .container08 {
+            .projetos-container07 {
               width: auto;
             }
-            .text3 {
+            .projetos-text03 {
               font-size: 1.3rem;
             }
-            .container10 {
-              width: auto;
-            }
-            .text4 {
-              font-size: 1.3rem;
-            }
-            .container13 {
+            .projetos-container10 {
               width: 185px;
             }
-            .text5 {
+            .projetos-text04 {
               width: 165px;
               font-size: 1.3rem;
             }
-            .container15 {
+            .projetos-container12 {
               width: auto;
             }
-            .text6 {
+            .projetos-text05 {
+              font-size: 1.3rem;
+            }
+            .projetos-container14 {
+              width: auto;
+            }
+            .projetos-text06 {
+              font-size: 1.3rem;
+            }
+            .projetos-container17 {
+              width: auto;
+            }
+            .projetos-text07 {
+              font-size: 1.3rem;
+            }
+            .projetos-container19 {
+              width: auto;
+            }
+            .projetos-text08 {
+              font-size: 1.3rem;
+            }
+            .projetos-container21 {
+              width: auto;
+            }
+            .projetos-text09 {
               font-size: 1.3rem;
             }
           }
           @media (max-width: 479px) {
-            .hero {
+            .projetos-hero {
               height: 492px;
             }
-            .container01 {
+            .projetos-container01 {
               width: 416px;
               height: 845px;
             }
-            .card {
+            .projetos-card {
               top: 62px;
               right: 0px;
               width: 100%;
@@ -514,59 +682,78 @@ const Projetos = (props) => {
               position: absolute;
               align-self: flex-start;
             }
-            .text {
+            .projetos-text {
               display: none;
             }
-            .container02 {
+            .projetos-container02 {
               width: auto;
               height: auto;
             }
-            .container03 {
+            .projetos-container03 {
               height: auto;
             }
-            .text1 {
+            .projetos-text01 {
               font-size: 1.2rem;
             }
-            .container05 {
+            .projetos-container05 {
               width: auto;
               height: auto;
             }
-            .text2 {
+            .projetos-text02 {
               font-size: 1.2rem;
             }
-            .container07 {
+            .projetos-container07 {
+              height: auto;
+            }
+            .projetos-text03 {
+              font-size: 1.2rem;
+            }
+            .projetos-container09 {
               width: auto;
               height: auto;
             }
-            .container08 {
-              width: 199px;
-              height: 68px;
-            }
-            .text3 {
-              font-size: 1.2rem;
-            }
-            .container10 {
-              width: 90px;
-              height: auto;
-            }
-            .text4 {
-              font-size: 1.2rem;
-            }
-            .container12 {
-              width: auto;
-              height: auto;
-            }
-            .container13 {
+            .projetos-container10 {
               width: 149px;
               height: auto;
             }
-            .text5 {
+            .projetos-text04 {
               font-size: 1.2rem;
             }
-            .container15 {
+            .projetos-container12 {
               height: auto;
             }
-            .text6 {
+            .projetos-text05 {
+              font-size: 1.2rem;
+            }
+            .projetos-container14 {
+              height: auto;
+            }
+            .projetos-text06 {
+              font-size: 1.2rem;
+            }
+            .projetos-container16 {
+              width: auto;
+              height: auto;
+            }
+            .projetos-container17 {
+              width: 199px;
+              height: 68px;
+            }
+            .projetos-text07 {
+              font-size: 1.2rem;
+            }
+            .projetos-container19 {
+              width: 90px;
+              height: auto;
+            }
+            .projetos-text08 {
+              font-size: 1.2rem;
+            }
+            .projetos-container21 {
+              width: 90px;
+              height: auto;
+            }
+            .projetos-text09 {
               font-size: 1.2rem;
             }
           }

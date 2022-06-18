@@ -10,7 +10,7 @@ import Fundo from '../components/fundo'
 const CdiceSoturno = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="cdice-soturno-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -22,23 +22,19 @@ const CdiceSoturno = (props) => {
             property="og:description"
             content="Um portfólio do Via Charisma. Entre e veja alguns projetos interessantes."
           />
-          <meta
-            property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/3b3261eb-e6ce-49b7-957c-cfef4b3a71d0?org_if_sml=1"
-          />
         </Head>
         <Header></Header>
-        <div className="hero">
-          <div className="container1">
-            <div className="card">
+        <div className="cdice-soturno-hero">
+          <div className="cdice-soturno-container1">
+            <div className="cdice-soturno-card">
               <Ttulo
-                rootClassName="rootClassName"
-                heading="Códice Soturno"
+                heading="CÓDICE SOTURNO"
+                rootClassName="ttulo-root-class-name"
               ></Ttulo>
-              <h1 className="text">
-                &quot;Muito cuidado com o que deseja&quot;
+              <h1 className="cdice-soturno-text">
+                Muito cuidado com o que deseja
               </h1>
-              <span className="text1">
+              <span className="cdice-soturno-text1">
                 <span>
                   O Códice Soturno é uma comunidade voltada a construção de
                   programas e aprendizado na área de programação. Nada que é
@@ -57,21 +53,24 @@ const CdiceSoturno = (props) => {
                 <br></br>
                 <span></span>
               </span>
-              <div className="container2">
+              <div className="cdice-soturno-container2">
                 <Link href="/projetos">
-                  <a className="link">
-                    <Voltar button="Voltar" className="component2"></Voltar>
+                  <a className="cdice-soturno-link">
+                    <Voltar
+                      button="Voltar"
+                      className="cdice-soturno-component2"
+                    ></Voltar>
                   </a>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="rootClassName6"></Fundo>
+        <Fundo rootClassName="fundo-root-class-name6"></Fundo>
       </div>
       <style jsx>
         {`
-          .container {
+          .cdice-soturno-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -79,7 +78,7 @@ const CdiceSoturno = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero {
+          .cdice-soturno-hero {
             width: 100%;
             height: 761px;
             display: flex;
@@ -88,7 +87,7 @@ const CdiceSoturno = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .container1 {
+          .cdice-soturno-container1 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -99,7 +98,7 @@ const CdiceSoturno = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .card {
+          .cdice-soturno-card {
             top: 160px;
             flex: 0 0 auto;
             left: 0px;
@@ -112,13 +111,14 @@ const CdiceSoturno = (props) => {
             box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
             align-items: flex-start;
+            border-radius: var(--dl-radius-radius-radius1);
             flex-direction: column;
             padding-bottom: 3rem;
             backdrop-filter: saturate(200%) blur(30px);
-            background-color: hsla(0, 0%, 100%, 0.8);
+            background-color: rgba(51, 48, 48, 0.8);
           }
-          .text {
-            color: var(--dl-color-secondary-700);
+          .cdice-soturno-text {
+            color: #ffffff;
             font-size: 2rem;
             text-align: center;
             font-family: Open Sans;
@@ -128,8 +128,8 @@ const CdiceSoturno = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .text1 {
-            color: var(--dl-color-secondary-600);
+          .cdice-soturno-text1 {
+            color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
             font-weight: 400;
@@ -140,7 +140,7 @@ const CdiceSoturno = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .container2 {
+          .cdice-soturno-container2 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -148,21 +148,21 @@ const CdiceSoturno = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .link {
+          .cdice-soturno-link {
             display: contents;
           }
-          .component2 {
+          .cdice-soturno-component2 {
             text-decoration: none;
           }
           @media (max-width: 991px) {
-            .hero {
+            .cdice-soturno-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .container1 {
+            .cdice-soturno-container1 {
               max-width: 960px;
             }
-            .card {
+            .cdice-soturno-card {
               top: 98px;
               right: 0px;
               width: 100%;
@@ -171,10 +171,10 @@ const CdiceSoturno = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .hero {
+            .cdice-soturno-hero {
               height: 680px;
             }
-            .card {
+            .cdice-soturno-card {
               top: 101px;
               flex: 1;
               right: 0px;
@@ -183,10 +183,10 @@ const CdiceSoturno = (props) => {
               position: absolute;
               align-items: center;
             }
-            .text {
+            .cdice-soturno-text {
               display: none;
             }
-            .text1 {
+            .cdice-soturno-text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -194,13 +194,13 @@ const CdiceSoturno = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .hero {
+            .cdice-soturno-hero {
               height: 702px;
             }
-            .container1 {
+            .cdice-soturno-container1 {
               height: 809px;
             }
-            .card {
+            .cdice-soturno-card {
               top: 98px;
               left: 0px;
               width: 100%;
@@ -208,7 +208,7 @@ const CdiceSoturno = (props) => {
               padding: var(--dl-space-space-unit);
               position: absolute;
             }
-            .text1 {
+            .cdice-soturno-text1 {
               font-size: 1rem;
             }
           }

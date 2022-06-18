@@ -7,10 +7,10 @@ import Ttulo from '../components/ttulo'
 import Voltar from '../components/voltar'
 import Fundo from '../components/fundo'
 
-const HUmanity = (props) => {
+const MirrorVeins = (props) => {
   return (
     <>
-      <div className="h-umanity-container">
+      <div className="mirror-veins-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -24,35 +24,35 @@ const HUmanity = (props) => {
           />
         </Head>
         <Header></Header>
-        <div className="h-umanity-hero">
-          <div className="h-umanity-container1">
-            <div className="h-umanity-card">
-              <Ttulo heading="H:UMANITY"></Ttulo>
-              <h1 className="h-umanity-text">O universo acena para mim</h1>
-              <span className="h-umanity-text1">
-                H:Umanity (ou Humanidade) é o nome de um rpg (role-playing game)
-                de mesa criado apenas para diversão, mas que possuí uma história
-                boa o suficiente para futuramente ser incluída no projeto Dark
-                Stories.
+        <div className="mirror-veins-hero">
+          <div className="mirror-veins-container1">
+            <div className="mirror-veins-card">
+              <Ttulo
+                heading="MIRROR VEINS"
+                rootClassName="ttulo-root-class-name5"
+              ></Ttulo>
+              <h1 className="mirror-veins-text">
+                A energia é um encanto eterno
+              </h1>
+              <span className="mirror-veins-text1">
+                Mirror Veins é o nome da continuação do projeto Dark Stories.
               </span>
-              <div className="h-umanity-container2">
-                <Link href="/projetos">
-                  <a className="h-umanity-link">
-                    <Voltar
-                      button="Voltar"
-                      className="h-umanity-component2"
-                    ></Voltar>
-                  </a>
-                </Link>
-              </div>
+              <Link href="/projetos">
+                <a className="mirror-veins-link">
+                  <Voltar
+                    button="Voltar"
+                    className="mirror-veins-component2"
+                  ></Voltar>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="fundo-root-class-name4"></Fundo>
+        <Fundo></Fundo>
       </div>
       <style jsx>
         {`
-          .h-umanity-container {
+          .mirror-veins-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -60,7 +60,7 @@ const HUmanity = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .h-umanity-hero {
+          .mirror-veins-hero {
             width: 100%;
             height: 800px;
             display: flex;
@@ -69,7 +69,7 @@ const HUmanity = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .h-umanity-container1 {
+          .mirror-veins-container1 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -80,7 +80,7 @@ const HUmanity = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .h-umanity-card {
+          .mirror-veins-card {
             flex: 0 0 auto;
             width: 996px;
             display: flex;
@@ -96,7 +96,7 @@ const HUmanity = (props) => {
             backdrop-filter: saturate(200%) blur(30px);
             background-color: rgba(51, 48, 48, 0.8);
           }
-          .h-umanity-text {
+          .mirror-veins-text {
             color: #ffffff;
             font-size: 2rem;
             text-align: center;
@@ -107,7 +107,7 @@ const HUmanity = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .h-umanity-text1 {
+          .mirror-veins-text1 {
             color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -119,46 +119,38 @@ const HUmanity = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .h-umanity-container2 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-          }
-          .h-umanity-link {
+          .mirror-veins-link {
             display: contents;
           }
-          .h-umanity-component2 {
+          .mirror-veins-component2 {
             text-decoration: none;
           }
           @media (max-width: 991px) {
-            .h-umanity-hero {
+            .mirror-veins-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .h-umanity-container1 {
+            .mirror-veins-container1 {
               max-width: 960px;
             }
-            .h-umanity-card {
+            .mirror-veins-card {
               width: 100%;
             }
           }
           @media (max-width: 767px) {
-            .h-umanity-hero {
-              height: 523px;
+            .mirror-veins-hero {
+              height: 537px;
             }
-            .h-umanity-card {
-              top: 76px;
+            .mirror-veins-card {
+              top: 81px;
               left: 0px;
               position: absolute;
               align-items: center;
             }
-            .h-umanity-text {
+            .mirror-veins-text {
               display: none;
             }
-            .h-umanity-text1 {
+            .mirror-veins-text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -166,18 +158,22 @@ const HUmanity = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .h-umanity-hero {
-              height: 588px;
+            .mirror-veins-hero {
+              height: 525px;
             }
-            .h-umanity-container1 {
+            .mirror-veins-container1 {
               height: 809px;
             }
-            .h-umanity-card {
+            .mirror-veins-card {
+              top: 79px;
+              left: 0px;
+              width: 100%;
               height: auto;
               padding: var(--dl-space-space-unit);
+              position: absolute;
             }
-            .h-umanity-text1 {
-              font-size: 1rem;
+            .mirror-veins-text1 {
+              text-align: left;
             }
           }
         `}
@@ -186,4 +182,4 @@ const HUmanity = (props) => {
   )
 }
 
-export default HUmanity
+export default MirrorVeins

@@ -5,16 +5,18 @@ import PropTypes from 'prop-types'
 const PlaceHolder = (props) => {
   return (
     <>
-      <div className={`container ${props.rootClassName} `}>
-        <button className="button buttonSmall">{props.button}</button>
+      <div className={`place-holder-container ${props.rootClassName} `}>
+        <button className="place-holder-button button buttonSmall">
+          {props.button}
+        </button>
       </div>
       <style jsx>
         {`
-          .container {
+          .place-holder-container {
             display: flex;
             position: relative;
           }
-          .button {
+          .place-holder-button {
             color: var(--dl-color-gray-white);
             opacity: 0;
             outline: none;

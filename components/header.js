@@ -6,52 +6,52 @@ import PlaceHolder from './place-holder'
 const Header = (props) => {
   return (
     <>
-      <div data-role="Header" className="header">
-        <nav className="nav">
-          <div className="container">
+      <div data-role="Header" className="header-header">
+        <nav className="header-nav">
+          <div className="header-container">
             <Link href="/">
-              <a className="link">Poseidon</a>
+              <a className="header-link">Poseidon</a>
             </Link>
-            <div className="menu">
+            <div className="header-menu">
               <Link href="/">
-                <a className="link1">Início</a>
+                <a className="header-link1">Início</a>
               </Link>
               <Link href="/projetos">
-                <a className="link3">
+                <a className="header-link3">
                   <span>Projetos</span>
                 </a>
               </Link>
             </div>
-            <div className="container1">
-              <div className="container2">
-                <PlaceHolder rootClassName="rootClassName"></PlaceHolder>
+            <div className="header-container1">
+              <div className="header-container2">
+                <PlaceHolder rootClassName="place-holder-root-class-name"></PlaceHolder>
               </div>
-              <div data-type="BurgerMenu" className="burger-menu">
-                <svg viewBox="0 0 1024 1024" className="icon">
+              <div data-type="BurgerMenu" className="header-burger-menu">
+                <svg viewBox="0 0 1024 1024" className="header-icon">
                   <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
               </div>
             </div>
           </div>
         </nav>
-        <div data-type="MobileMenu" className="mobile-menu">
-          <div className="top">
+        <div data-type="MobileMenu" className="header-mobile-menu">
+          <div className="header-top">
             <Link href="/">
-              <a className="link4">Poseidon</a>
+              <a className="header-link4">Poseidon</a>
             </Link>
-            <div data-type="CloseMobileMenu" className="close-menu">
-              <svg viewBox="0 0 1024 1024" className="icon2">
+            <div data-type="CloseMobileMenu" className="header-close-menu">
+              <svg viewBox="0 0 1024 1024" className="header-icon2">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
               </svg>
             </div>
           </div>
-          <div className="mid">
-            <div className="menu1">
+          <div className="header-mid">
+            <div className="header-menu1">
               <Link href="/">
-                <a className="link5">Início</a>
+                <a className="header-link5">Início</a>
               </Link>
               <Link href="/projetos">
-                <a className="link6">Projetos</a>
+                <a className="header-link6">Projetos</a>
               </Link>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Header = (props) => {
       </div>
       <style jsx>
         {`
-          .header {
+          .header-header {
             top: 0px;
             left: auto;
             right: auto;
@@ -73,7 +73,7 @@ const Header = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .nav {
+          .header-nav {
             flex: 0 0 auto;
             color: var(--dl-color-secondary-600);
             width: 100%;
@@ -86,14 +86,15 @@ const Header = (props) => {
             align-items: center;
             padding-top: var(--dl-space-space-halfunit);
             padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: var(--dl-radius-radius-radius1);
             padding-right: var(--dl-space-space-unitandahalfunit);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-halfunit);
             backdrop-filter: saturate(200%) blur(30px);
             justify-content: space-between;
-            background-color: hsla(0, 0%, 100%, 0.8) !important;
+            background-color: rgba(51, 48, 48, 0.8);
           }
-          .container {
+          .header-container {
             color: var(--dl-color-gray-black);
             width: 100%;
             display: flex;
@@ -101,11 +102,11 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .link {
-            color: var(--dl-color-secondary-700);
-            font-size: 0.875rem;
+          .header-link {
+            color: #ffffff;
+            font-size: 1.3rem;
             transition: 0.3s;
-            font-family: Open Sans;
+            font-family: NMSGeoSans;
             font-weight: 800;
             margin-left: var(--dl-space-space-unit);
             margin-right: var(--dl-space-space-unit);
@@ -113,18 +114,19 @@ const Header = (props) => {
             text-transform: uppercase;
             text-decoration: none;
           }
-          .link:hover {
-            color: #e4092a;
+          .header-link:hover {
+            color: #c19696;
             cursor: pointer;
             transform: scale(1.1);
           }
-          .menu {
+          .header-menu {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             flex-direction: row;
           }
-          .link1 {
+          .header-link1 {
+            color: #ffffff;
             font-size: 1rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -137,11 +139,12 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link1:hover {
+          .header-link1:hover {
             cursor: pointer;
             transform: scale(1.2);
           }
-          .link3 {
+          .header-link3 {
+            color: #ffffff;
             font-size: 1rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -154,34 +157,34 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link3:hover {
+          .header-link3:hover {
             cursor: pointer;
             transform: scale(1.2);
           }
-          .container1 {
+          .header-container1 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .container2 {
+          .header-container2 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .burger-menu {
+          .header-burger-menu {
             display: none;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .icon {
+          .header-icon {
             width: 24px;
             height: 24px;
             margin-left: var(--dl-space-space-unit);
           }
-          .mobile-menu {
+          .header-mobile-menu {
             top: 0px;
             flex: 0 0 auto;
             left: 0px;
@@ -195,7 +198,7 @@ const Header = (props) => {
             flex-direction: column;
             background-color: var(--dl-color-gray-white);
           }
-          .top {
+          .header-top {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -204,7 +207,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .link4 {
+          .header-link4 {
             color: var(--dl-color-secondary-700);
             font-size: 2rem;
             font-style: normal;
@@ -214,17 +217,17 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .close-menu {
+          .header-close-menu {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .icon2 {
+          .header-icon2 {
             width: 24px;
             height: 24px;
           }
-          .mid {
+          .header-mid {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -233,14 +236,14 @@ const Header = (props) => {
             padding-right: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .menu1 {
+          .header-menu1 {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .link5 {
+          .header-link5 {
             font-size: 1.5rem;
             transition: 0.3s;
             font-family: Open Sans;
@@ -250,10 +253,10 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link5:hover {
+          .header-link5:hover {
             transform: scale(1.2);
           }
-          .link6 {
+          .header-link6 {
             font-size: 1.5rem;
             transition: 0.3s;
             font-family: Open Sans;
@@ -263,24 +266,36 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .link6:hover {
+          .header-link6:hover {
             transform: scale(1.2);
           }
           @media (max-width: 991px) {
-            .nav {
+            .header-nav {
               max-width: 960px;
             }
           }
           @media (max-width: 767px) {
-            .menu {
+            .header-menu {
               display: none;
             }
-            .burger-menu {
+            .header-burger-menu {
               display: flex;
+            }
+            .header-icon {
+              fill: #ffffff;
+            }
+            .header-mobile-menu {
+              display: none;
             }
           }
           @media (max-width: 479px) {
-            .container2 {
+            .header-container2 {
+              display: none;
+            }
+            .header-icon {
+              fill: #ffffff;
+            }
+            .header-mobile-menu {
               display: none;
             }
           }

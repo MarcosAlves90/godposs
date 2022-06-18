@@ -5,16 +5,18 @@ import PropTypes from 'prop-types'
 const Buto2 = (props) => {
   return (
     <>
-      <div className="container">
-        <button className="button buttonSmall">{props.button}</button>
+      <div className="butão2-container">
+        <button className="butão2-button button buttonSmall">
+          {props.button}
+        </button>
       </div>
       <style jsx>
         {`
-          .container {
+          .butão2-container {
             display: flex;
             position: relative;
           }
-          .button {
+          .butão2-button {
             color: var(--dl-color-gray-white);
             outline: none;
             background: #e4092a;
@@ -26,7 +28,7 @@ const Buto2 = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             padding-bottom: var(--dl-space-space-triplequarterunit);
           }
-          .button:hover {
+          .butão2-button:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.1);

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
@@ -7,10 +6,10 @@ import Ttulo from '../components/ttulo'
 import Voltar from '../components/voltar'
 import Fundo from '../components/fundo'
 
-const HUmanity = (props) => {
+const CRCCTD = (props) => {
   return (
     <>
-      <div className="h-umanity-container">
+      <div className="c-r-c-c-t-d-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -24,35 +23,43 @@ const HUmanity = (props) => {
           />
         </Head>
         <Header></Header>
-        <div className="h-umanity-hero">
-          <div className="h-umanity-container1">
-            <div className="h-umanity-card">
-              <Ttulo heading="H:UMANITY"></Ttulo>
-              <h1 className="h-umanity-text">O universo acena para mim</h1>
-              <span className="h-umanity-text1">
-                H:Umanity (ou Humanidade) é o nome de um rpg (role-playing game)
-                de mesa criado apenas para diversão, mas que possuí uma história
-                boa o suficiente para futuramente ser incluída no projeto Dark
-                Stories.
+        <div className="c-r-c-c-t-d-hero">
+          <div className="c-r-c-c-t-d-container1">
+            <div className="c-r-c-c-t-d-card">
+              <Ttulo
+                heading="CRCCTD"
+                rootClassName="ttulo-root-class-name7"
+              ></Ttulo>
+              <h1 className="c-r-c-c-t-d-text">Você não deveria estar aqui</h1>
+              <span className="c-r-c-c-t-d-text1">
+                <span>
+                  &quot;Há coisas que a humanidade não deve ter contato, e nós a
+                  protegemos delas.&quot;
+                </span>
+                <br></br>
+                <span>
+                  Sendo uma história inspirada na fundação SCP, a CRCCTD é um
+                  projeto que visa a instrumentalização da existência
+                  desconhecida, capturando a mesma para evitar que tenha contato
+                  com a humanidade.
+                </span>
+                <br></br>
+                <span>
+                  O projeto Dark Stories possuí conexões com a CRCCTD.
+                </span>
               </span>
-              <div className="h-umanity-container2">
-                <Link href="/projetos">
-                  <a className="h-umanity-link">
-                    <Voltar
-                      button="Voltar"
-                      className="h-umanity-component2"
-                    ></Voltar>
-                  </a>
-                </Link>
-              </div>
+              <Voltar
+                button="Voltar"
+                rootClassName="voltar-root-class-name2"
+              ></Voltar>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="fundo-root-class-name4"></Fundo>
+        <Fundo rootClassName="fundo-root-class-name8"></Fundo>
       </div>
       <style jsx>
         {`
-          .h-umanity-container {
+          .c-r-c-c-t-d-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -60,7 +67,7 @@ const HUmanity = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .h-umanity-hero {
+          .c-r-c-c-t-d-hero {
             width: 100%;
             height: 800px;
             display: flex;
@@ -69,7 +76,7 @@ const HUmanity = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .h-umanity-container1 {
+          .c-r-c-c-t-d-container1 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -80,7 +87,7 @@ const HUmanity = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .h-umanity-card {
+          .c-r-c-c-t-d-card {
             flex: 0 0 auto;
             width: 996px;
             display: flex;
@@ -96,7 +103,7 @@ const HUmanity = (props) => {
             backdrop-filter: saturate(200%) blur(30px);
             background-color: rgba(51, 48, 48, 0.8);
           }
-          .h-umanity-text {
+          .c-r-c-c-t-d-text {
             color: #ffffff;
             font-size: 2rem;
             text-align: center;
@@ -107,7 +114,7 @@ const HUmanity = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .h-umanity-text1 {
+          .c-r-c-c-t-d-text1 {
             color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -119,46 +126,29 @@ const HUmanity = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .h-umanity-container2 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-          }
-          .h-umanity-link {
-            display: contents;
-          }
-          .h-umanity-component2 {
-            text-decoration: none;
-          }
           @media (max-width: 991px) {
-            .h-umanity-hero {
+            .c-r-c-c-t-d-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .h-umanity-container1 {
+            .c-r-c-c-t-d-container1 {
               max-width: 960px;
             }
-            .h-umanity-card {
+            .c-r-c-c-t-d-card {
               width: 100%;
             }
           }
           @media (max-width: 767px) {
-            .h-umanity-hero {
-              height: 523px;
-            }
-            .h-umanity-card {
+            .c-r-c-c-t-d-card {
               top: 76px;
-              left: 0px;
+              right: 0px;
               position: absolute;
               align-items: center;
             }
-            .h-umanity-text {
+            .c-r-c-c-t-d-text {
               display: none;
             }
-            .h-umanity-text1 {
+            .c-r-c-c-t-d-text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -166,17 +156,17 @@ const HUmanity = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .h-umanity-hero {
-              height: 588px;
+            .c-r-c-c-t-d-hero {
+              height: 834px;
             }
-            .h-umanity-container1 {
-              height: 809px;
+            .c-r-c-c-t-d-container1 {
+              height: 676px;
             }
-            .h-umanity-card {
+            .c-r-c-c-t-d-card {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .h-umanity-text1 {
+            .c-r-c-c-t-d-text1 {
               font-size: 1rem;
             }
           }
@@ -186,4 +176,4 @@ const HUmanity = (props) => {
   )
 }
 
-export default HUmanity
+export default CRCCTD

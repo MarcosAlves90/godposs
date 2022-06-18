@@ -5,36 +5,36 @@ import PropTypes from 'prop-types'
 const Ttulo = (props) => {
   return (
     <>
-      <div className={`container ${props.rootClassName} `}>
-        <h1 className="text">{props.heading}</h1>
+      <div className={`título-container ${props.rootClassName} `}>
+        <h1 className="título-text">{props.heading}</h1>
       </div>
       <style jsx>
         {`
-          .container {
+          .título-container {
             display: flex;
             position: relative;
           }
-          .text {
+          .título-text {
             color: #e81d24;
             font-size: 3.25rem;
             text-align: center;
-            font-family: Righteous;
+            font-family: NMSGeoSans;
             font-weight: 700;
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #3d2d4c;
+            background-color: #bf8787;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           @media (max-width: 767px) {
-            .text {
+            .título-text {
               font-size: 3.1rem;
             }
           }
           @media (max-width: 479px) {
-            .text {
+            .título-text {
               font-size: 3rem;
             }
           }
@@ -45,13 +45,13 @@ const Ttulo = (props) => {
 }
 
 Ttulo.defaultProps = {
-  heading: 'H:Umanity',
   rootClassName: '',
+  heading: 'H:Umanity',
 }
 
 Ttulo.propTypes = {
-  heading: PropTypes.string,
   rootClassName: PropTypes.string,
+  heading: PropTypes.string,
 }
 
 export default Ttulo

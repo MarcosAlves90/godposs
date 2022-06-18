@@ -5,21 +5,39 @@ import PropTypes from 'prop-types'
 const Fundo = (props) => {
   return (
     <>
-      <div className={`container ${props.rootClassName} `}>
+      <div className={`fundo-container ${props.rootClassName} `}>
+        <img
+          alt={props.image_alt1}
+          src={props.image_src1}
+          loading="eager"
+          className="fundo-image"
+        />
         <img
           alt={props.image_alt}
           src={props.image_src}
           loading="eager"
-          className="image"
+          className="fundo-image1"
         />
       </div>
       <style jsx>
         {`
-          .container {
+          .fundo-container {
             display: flex;
             position: relative;
           }
-          .image {
+          .fundo-image {
+            top: 0px;
+            flex: inherit;
+            left: left;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            position: fixed;
+            object-fit: cover;
+            object-position: right;
+          }
+          .fundo-image1 {
             top: 0px;
             flex: inherit;
             left: left;
@@ -30,11 +48,17 @@ const Fundo = (props) => {
             position: fixed;
             object-fit: cover;
             object-position: right;
+            border-bottom-left-radius: 10rem;
           }
 
           @media (max-width: 767px) {
-            .image {
-              display: none;
+            .fundo-root-class-name2 {
+              opacity: 1;
+            }
+          }
+          @media (max-width: 479px) {
+            .fundo-root-class-name2 {
+              display: flex;
             }
           }
         `}
@@ -45,13 +69,17 @@ const Fundo = (props) => {
 
 Fundo.defaultProps = {
   image_alt: 'image',
+  image_src1: '/playground_assets/avoid-200h.jpg',
+  image_alt1: 'image',
   image_src:
-    'https://images.unsplash.com/photo-1621246159024-e53b1d25fc1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxwdXJwbGV8ZW58MHx8fHwxNjQ2OTc0MDU0&ixlib=rb-1.2.1&w=1000',
+    'https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Image-about-aesthetic-in-Wallpaper-by.png?w=640&ssl=1',
   rootClassName: '',
 }
 
 Fundo.propTypes = {
   image_alt: PropTypes.string,
+  image_src1: PropTypes.string,
+  image_alt1: PropTypes.string,
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
 }
