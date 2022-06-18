@@ -21,6 +21,10 @@ const Projetos = (props) => {
             property="og:description"
             content="Um portfólio do Via Charisma. Entre e veja alguns projetos interessantes."
           />
+          <meta
+            property="og:image"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/b661a600-36d1-40ec-9b48-e5707187c246?org_if_sml=1"
+          />
         </Head>
         <Header></Header>
         <div className="projetos-hero">
