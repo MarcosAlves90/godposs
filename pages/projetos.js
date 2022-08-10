@@ -237,7 +237,7 @@ const Projetos = (props) => {
             text-decoration: none;
           }
           .projetos-container7:hover {
-            cursor: progress;
+            cursor: pointer;
             opacity: 0.5;
             transform: scale(1.03);
           }
