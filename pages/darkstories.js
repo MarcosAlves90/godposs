@@ -35,7 +35,7 @@ const DarkStories = (props) => {
                 rootClassName="ttulo-root-class-name6"
               ></Ttulo>
               <h1 className="dark-stories-text">
-                A energia é um encanto eterno
+                &quot;A energia é um encanto eterno&quot;
               </h1>
               <span className="dark-stories-text1">
                 <span>

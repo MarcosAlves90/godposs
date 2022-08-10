@@ -33,12 +33,12 @@ class CustomDocument extends Document {
           ></link>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+            href="https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.css"
             data-tag="font"
           ></link>
           <link
             rel="stylesheet"
-            href="https://nmscd.github.io/No-Mans-Sky-Universal-Font/assets/font/NMSGeoSans_Kerned/Web-TT/NMSGeoSans_Kerned.css"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
             data-tag="font"
           ></link>
           <noscript

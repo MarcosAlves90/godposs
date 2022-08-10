@@ -7,10 +7,10 @@ import Ttulo from '../components/ttulo'
 import Voltar from '../components/voltar'
 import Fundo from '../components/fundo'
 
-const Hysax = (props) => {
+const DoomsdayGlock = (props) => {
   return (
     <>
-      <div className="hysax-container">
+      <div className="doomsday-glock-container">
         <Head>
           <title>God Poseidon</title>
           <meta
@@ -28,51 +28,85 @@ const Hysax = (props) => {
           />
         </Head>
         <Header></Header>
-        <div className="hysax-hero">
-          <div className="hysax-container1">
-            <div className="hysax-card">
+        <div className="doomsday-glock-hero">
+          <div className="doomsday-glock-container1">
+            <div className="doomsday-glock-card">
               <Ttulo
-                heading="HYSAX"
-                rootClassName="ttulo-root-class-name1"
+                heading="THE DOOMSDAY GLOCK"
+                rootClassName="ttulo-root-class-name8"
               ></Ttulo>
-              <h1 className="hysax-text">Interação e socialização</h1>
-              <span className="hysax-text1">
+              <h1 className="doomsday-glock-text">
+                &quot;Você parece preso em um loop&quot;
+              </h1>
+              <span className="doomsday-glock-text1">
+                <span className="doomsday-glock-text2">The Doomsday Glock</span>
                 <span>
-                  Hysax é o nome de um grupo de projetos baseados na interação
-                  social entre várias categorias de pessoas em diferentes redes
-                  sociais. Por enquanto, o maior projeto dentro desse grupo é o
-                  Hysax: Café, que é um servidor no discord com regras rígidas e
-                  um futuro promissor.
+                  {' '}
+                  é o nome de um jogo criado para uma atividade escolar, mas que
+                  acabou se mostrando com muito potencial. No jogo você é o
+                  &quot;número dois&quot; e está preso em um tipo de loop
+                  temporal, para escapar disso será necessário multiplicar e
+                  somar suas habilidades, além de derrotar seus inimigos é
+                  claro. Futuras atualizações podem revelar fragmentos de sua
+                  verdadeira história.
+                </span>
+                <br></br>
+                <span>
+                  O jogo é atualmente desenvolvido por mim, mas inicialmente
+                  tive ajuda da equipe do
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <a
+                  href="https://twitter.com/DiseeObserva"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <span className="doomsday-glock-text5">Disee</span>
+                </a>
+                <span>
+                  .
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <span>
+                  Mais informações e downloads do jogo podem ser encontrados em
+                  sua página.
                 </span>
               </span>
-              <div className="hysax-container2">
+              <div className="doomsday-glock-container2">
                 <Link href="/projetos">
-                  <a className="hysax-link">
+                  <a className="doomsday-glock-link1">
                     <Voltar
                       button="Voltar"
-                      className="hysax-component2"
+                      className="doomsday-glock-component2"
                     ></Voltar>
                   </a>
                 </Link>
                 <a
-                  href="https://disboard.org/server/929758220686331976"
+                  href="https://dakusturoi.itch.io/doomsday-glock"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="hysax-link1 button"
+                  className="doomsday-glock-link2 button"
                 >
-                  <span className="hysax-text3">
-                    <span>Entrar no hysax: café</span>
-                  </span>
+                  <span className="doomsday-glock-text8">Página do jogo</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <Fundo rootClassName="fundo-root-class-name3"></Fundo>
+        <Fundo rootClassName="fundo-root-class-name9"></Fundo>
       </div>
       <style jsx>
         {`
-          .hysax-container {
+          .doomsday-glock-container {
             width: 100%;
             height: auto;
             display: flex;
@@ -80,7 +114,7 @@ const Hysax = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hysax-hero {
+          .doomsday-glock-hero {
             width: 100%;
             height: 800px;
             display: flex;
@@ -89,7 +123,7 @@ const Hysax = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
-          .hysax-container1 {
+          .doomsday-glock-container1 {
             width: 100%;
             height: 798px;
             display: flex;
@@ -100,7 +134,7 @@ const Hysax = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .hysax-card {
+          .doomsday-glock-card {
             flex: 0 0 auto;
             width: 996px;
             display: flex;
@@ -116,7 +150,7 @@ const Hysax = (props) => {
             backdrop-filter: saturate(200%) blur(30px);
             background-color: rgba(51, 48, 48, 0.8);
           }
-          .hysax-text {
+          .doomsday-glock-text {
             color: #ffffff;
             font-size: 2rem;
             text-align: center;
@@ -127,7 +161,7 @@ const Hysax = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .hysax-text1 {
+          .doomsday-glock-text1 {
             color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -139,7 +173,15 @@ const Hysax = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .hysax-container2 {
+          .doomsday-glock-text2 {
+            font-style: italic;
+            font-weight: 400;
+          }
+          .doomsday-glock-text5 {
+            color: #eae4b2;
+            text-decoration: underline;
+          }
+          .doomsday-glock-container2 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -147,14 +189,14 @@ const Hysax = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .hysax-link {
+          .doomsday-glock-link1 {
             display: contents;
           }
-          .hysax-component2 {
+          .doomsday-glock-component2 {
             text-decoration: none;
           }
-          .hysax-link1 {
-            color: #f5d2d2;
+          .doomsday-glock-link2 {
+            color: #07c0d0;
             height: auto;
             outline: none;
             font-size: 0.75rem;
@@ -166,7 +208,7 @@ const Hysax = (props) => {
             line-height: 1.4;
             margin-left: 15px;
             padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: #f5d2d2;
+            border-color: #07c0d0;
             border-width: 3px;
             padding-left: var(--dl-space-space-unitandahalfunit);
             border-radius: var(--dl-radius-radius-radius1);
@@ -177,42 +219,42 @@ const Hysax = (props) => {
             text-decoration: none;
             background-color: rgba(255, 255, 255, 0);
           }
-          .hysax-link1:hover {
+          .doomsday-glock-link2:hover {
             cursor: pointer;
             opacity: 0.5;
             transform: scale(1.1);
           }
-          .hysax-text3 {
+          .doomsday-glock-text8 {
             font-size: 0.8rem;
             font-style: normal;
             font-weight: 600;
           }
           @media (max-width: 991px) {
-            .hysax-hero {
+            .doomsday-glock-hero {
               padding-left: var(--dl-space-space-tripleunit);
               padding-right: var(--dl-space-space-tripleunit);
             }
-            .hysax-container1 {
+            .doomsday-glock-container1 {
               max-width: 960px;
             }
-            .hysax-card {
+            .doomsday-glock-card {
               width: 100%;
             }
           }
           @media (max-width: 767px) {
-            .hysax-hero {
+            .doomsday-glock-hero {
               height: 654px;
             }
-            .hysax-card {
+            .doomsday-glock-card {
               top: 79px;
               right: 0px;
               position: absolute;
               align-items: center;
             }
-            .hysax-text {
+            .doomsday-glock-text {
               display: none;
             }
-            .hysax-text1 {
+            .doomsday-glock-text1 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -220,17 +262,17 @@ const Hysax = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .hysax-hero {
+            .doomsday-glock-hero {
               height: 644px;
             }
-            .hysax-container1 {
+            .doomsday-glock-container1 {
               height: 809px;
             }
-            .hysax-card {
+            .doomsday-glock-card {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .hysax-text1 {
+            .doomsday-glock-text1 {
               font-size: 1rem;
             }
           }
@@ -240,4 +282,4 @@ const Hysax = (props) => {
   )
 }
 
-export default Hysax
+export default DoomsdayGlock

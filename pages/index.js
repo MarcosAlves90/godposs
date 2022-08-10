@@ -30,21 +30,45 @@ const Incio = (props) => {
           <div className="incio-container1">
             <div className="incio-card">
               <Ttulo
-                heading="A GOD POSEIDON"
+                heading="MARCOS ALVES"
                 rootClassName="ttulo-root-class-name2"
               ></Ttulo>
-              <h1 className="incio-text">Tem algo que não se encaixa</h1>
-              <span className="incio-text1">
+              <h1 className="incio-text">
+                &quot;A esperança é o sonho do homem acordado.&quot;
+              </h1>
+              <span className="incio-text01">
                 <span>
-                  Olá, sou aquele que muitos chamam de Via. Eu sempre tive
-                  muitos projetos, mas eu nunca apresentei eles para as pessoas,
-                  então quando eu percebi isso, resolvi fazer um
-                  &quot;portfólio&quot; para apresentá-los, e bom, o resultado
-                  foi esse site que você está vendo. Eu tenho muito carinho por
-                  cada um desses sonhos que eu chamo de projetos, então espero
-                  que as pessoas, quando souberem o intuito de cada um, se
-                  interessem pelo menos um pouco por eles.
+                  Olá, meu nome é Marcos Alves. Eu sempre tive vontade de marcar
+                  a mente das pessoas com algo que eu tenha criado, por isso
+                  tenho muitos projetos, alguns grandes, outros pequenos, mas
+                  nenhum impossível.
                 </span>
+                <br></br>
+                <span>
+                  Gosto muito de criar coisas novas e desafiar os padrões atuais
+                  de formas que ninguém conseguiria pensar, e acredito que é
+                  isso que me faz ser eu.
+                </span>
+                <br></br>
+                <span></span>
+                <span>
+                  Tudo que eu crio é ou tem a ver com histórias que escrevo, por
+                  isso me considero muito criativo, principalmente quando
+                  falamos de literatura, filosofia e física.
+                </span>
+                <br></br>
+                <span></span>
+                <br></br>
+                <span>
+                  Caso goste dos meus projetos ou apenas queira entrar em
+                  contato:
+                </span>
+                <br></br>
+                <span></span>
+                <span className="incio-text12">E-mail de contato:</span>
+                <span> MarcosAlves25@proton.me</span>
+                <br></br>
+                <span></span>
               </span>
               <div className="incio-container2">
                 <a
@@ -135,7 +159,6 @@ const Incio = (props) => {
           .incio-text {
             color: #ffffff;
             font-size: 2rem;
-            text-align: center;
             font-family: Open Sans;
             font-weight: 700;
             line-height: 1.3;
@@ -143,7 +166,7 @@ const Incio = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .incio-text1 {
+          .incio-text01 {
             color: #ffffff;
             font-size: 1.25rem;
             font-family: Open Sans;
@@ -154,6 +177,10 @@ const Incio = (props) => {
             padding-right: var(--dl-space-space-tripleunit);
             text-transform: none;
             text-decoration: none;
+          }
+          .incio-text12 {
+            font-style: normal;
+            font-weight: 700;
           }
           .incio-container2 {
             flex: 0 0 auto;
@@ -220,6 +247,9 @@ const Incio = (props) => {
             .incio-card {
               width: 100%;
             }
+            .incio-text {
+              text-align: center;
+            }
           }
           @media (max-width: 767px) {
             .incio-hero {
@@ -235,7 +265,7 @@ const Incio = (props) => {
             .incio-text {
               display: none;
             }
-            .incio-text1 {
+            .incio-text01 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -260,7 +290,7 @@ const Incio = (props) => {
               padding: var(--dl-space-space-unit);
               position: absolute;
             }
-            .incio-text1 {
+            .incio-text01 {
               font-size: 1rem;
               text-align: left;
             }

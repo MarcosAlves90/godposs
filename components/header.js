@@ -1,19 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
 
+import PropTypes from 'prop-types'
+
 import PlaceHolder from './place-holder'
 
 const Header = (props) => {
   return (
     <>
-      <div data-role="Header" className="header-header">
+      <div
+        data-role="Header"
+        className={`header-header ${props.rootClassName} `}
+      >
         <nav className="header-nav">
           <div className="header-container">
-            <Link href="/">
+            <Link href="/incio">
               <a className="header-link">Poseidon</a>
             </Link>
             <div className="header-menu">
-              <Link href="/">
+              <Link href="/incio">
                 <a className="header-link1">Início</a>
               </Link>
               <Link href="/projetos">
@@ -36,7 +41,7 @@ const Header = (props) => {
         </nav>
         <div data-type="MobileMenu" className="header-mobile-menu">
           <div className="header-top">
-            <Link href="/">
+            <Link href="/incio">
               <a className="header-link4">Poseidon</a>
             </Link>
             <div data-type="CloseMobileMenu" className="header-close-menu">
@@ -47,7 +52,7 @@ const Header = (props) => {
           </div>
           <div className="header-mid">
             <div className="header-menu1">
-              <Link href="/">
+              <Link href="/incio">
                 <a className="header-link5">Início</a>
               </Link>
               <Link href="/projetos">
@@ -106,7 +111,7 @@ const Header = (props) => {
             color: #ffffff;
             font-size: 1.3rem;
             transition: 0.3s;
-            font-family: NMSGeoSans;
+            font-family: NMSFuturaProBook;
             font-weight: 800;
             margin-left: var(--dl-space-space-unit);
             margin-right: var(--dl-space-space-unit);
@@ -303,6 +308,14 @@ const Header = (props) => {
       </style>
     </>
   )
+}
+
+Header.defaultProps = {
+  rootClassName: '',
+}
+
+Header.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default Header
