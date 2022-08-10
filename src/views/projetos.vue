@@ -9,7 +9,7 @@
           ></app-ttulo>
           <h1 class="projetos-text">Feitos com carinho</h1>
           <div class="projetos-container2">
-            <router-link to="/dark-stories" class="projetos-navlink">
+            <router-link to="/darkstories" class="projetos-navlink">
               <div class="projetos-container3">
                 <div class="projetos-container4">
                   <h1 class="projetos-text1">Dark Stories</h1>
@@ -23,7 +23,7 @@
                 </div>
               </div>
             </router-link>
-            <router-link to="/doomsday-glock" class="projetos-navlink2">
+            <router-link to="/doomsdayglock" class="projetos-navlink2">
               <div class="projetos-container7">
                 <div class="projetos-container8">
                   <h1 class="projetos-text3">DOOMSDAY GLOCK</h1>

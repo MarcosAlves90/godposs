@@ -16,7 +16,7 @@ export default new Router({
   routes: [
     {
       name: 'Dark-Stories',
-      path: '/dark-stories',
+      path: '/darkstories',
       component: DarkStories,
     },
     {
@@ -31,7 +31,7 @@ export default new Router({
     },
     {
       name: 'Doomsday-Glock',
-      path: '/doomsday-glock',
+      path: '/doomsdayglock',
       component: DoomsdayGlock,
     },
     {

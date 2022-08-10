@@ -2,9 +2,9 @@
   <div data-role="Header" class="header-header" v-bind:class="rootClassName">
     <nav class="header-nav">
       <div class="header-container">
-        <router-link to="/incio" class="header-navlink">Poseidon</router-link>
+        <router-link to="/" class="header-navlink">Poseidon</router-link>
         <div class="header-menu">
-          <router-link to="/incio" class="header-navlink1">Início</router-link>
+          <router-link to="/" class="header-navlink1">Início</router-link>
           <router-link to="/projetos" class="header-link">
             <span>Projetos</span>
           </router-link>

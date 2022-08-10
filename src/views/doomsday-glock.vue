@@ -25,7 +25,7 @@
             <span>
               O jogo é atualmente desenvolvido por mim, mas inicialmente tive
               ajuda da equipe do
-              <span v-html="rawrtc3"></span>
+              <span v-html="rawf3n6"></span>
             </span>
             <a
               href="https://twitter.com/DiseeObserva"
@@ -36,7 +36,7 @@
             </a>
             <span>
               .
-              <span v-html="raw5hjv"></span>
+              <span v-html="rawjy5v"></span>
             </span>
             <br />
             <span>
@@ -84,8 +84,8 @@ export default {
 
   data() {
     return {
-      rawrtc3: ' ',
-      raw5hjv: ' ',
+      rawf3n6: ' ',
+      rawjy5v: ' ',
     }
   },
 
