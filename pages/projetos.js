@@ -23,7 +23,7 @@ const Projetos = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/b661a600-36d1-40ec-9b48-e5707187c246?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/361a0576-f35f-4b54-b749-946972506b06?org_if_sml=1"
           />
         </Head>
         <div className="projetos-hero">
@@ -90,6 +90,15 @@ const Projetos = (props) => {
                   </a>
                 </Link>
               </div>
+              <Link href="/doomsdayglock">
+                <a className="projetos-link6">
+                  <div className="projetos-container15">
+                    <div className="projetos-container16">
+                      <h1 className="projetos-text7">THE MENTAL WORLD</h1>
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -108,7 +117,7 @@ const Projetos = (props) => {
           }
           .projetos-hero {
             width: 100%;
-            height: 694px;
+            height: 611px;
             display: flex;
             max-width: 1320px;
             padding-left: var(--dl-space-space-unitandahalfunit);
@@ -130,7 +139,7 @@ const Projetos = (props) => {
             left: 0px;
             width: auto;
             bottom: 250px;
-            height: 302px;
+            height: 391px;
             display: flex;
             padding: var(--dl-space-space-tripleunit);
             z-index: 1;
@@ -296,7 +305,7 @@ const Projetos = (props) => {
             grid-area: e;
             transition: 0.3s;
             align-items: center;
-            border-color: #7e6892;
+            border-color: #88644e;
             border-width: 3px;
             margin-right: 10px;
             border-radius: var(--dl-radius-radius-radius1);
@@ -319,7 +328,7 @@ const Projetos = (props) => {
             justify-content: center;
           }
           .projetos-text4 {
-            color: rgb(126, 104, 146);
+            color: #88644e;
             width: 248px;
             font-size: 1.3rem;
             font-style: normal;
@@ -338,7 +347,7 @@ const Projetos = (props) => {
             grid-area: d;
             transition: 0.3s;
             align-items: center;
-            border-color: #e2a1a1;
+            border-color: #b78a6f;
             border-width: 3px;
             margin-right: 10px;
             border-radius: var(--dl-radius-radius-radius1);
@@ -361,7 +370,7 @@ const Projetos = (props) => {
             justify-content: center;
           }
           .projetos-text5 {
-            color: #e2a1a1;
+            color: #b78a6f;
             font-size: 1.3rem;
             font-style: normal;
             text-align: center;
@@ -377,7 +386,7 @@ const Projetos = (props) => {
             grid-area: e;
             transition: 0.3s;
             align-items: center;
-            border-color: #07c0d0;
+            border-color: #daab90;
             border-width: 3px;
             margin-right: 10px;
             border-radius: var(--dl-radius-radius-radius1);
@@ -401,7 +410,48 @@ const Projetos = (props) => {
             justify-content: center;
           }
           .projetos-text6 {
-            color: #07c0d0;
+            color: #daab90;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-family: NMSFuturaProBook;
+            font-weight: 800;
+          }
+          .projetos-link6 {
+            display: contents;
+          }
+          .projetos-container15 {
+            width: 804px;
+            height: 68px;
+            grid-area: e;
+            align-self: center;
+            margin-top: 20px;
+            transition: 0.3s;
+            align-items: center;
+            border-color: #f5cab1;
+            border-width: 3px;
+            margin-right: 10px;
+            border-radius: var(--dl-radius-radius-radius1);
+            margin-bottom: 10px;
+            flex-direction: column;
+            text-decoration: none;
+          }
+          .projetos-container15:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.03);
+          }
+          .projetos-container16 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            justify-content: center;
+          }
+          .projetos-text7 {
+            color: rgb(245, 202, 177);
             font-size: 1.3rem;
             font-style: normal;
             font-family: NMSFuturaProBook;
@@ -417,7 +467,7 @@ const Projetos = (props) => {
             }
             .projetos-card {
               width: 100%;
-              height: 304px;
+              height: 390px;
             }
             .projetos-container02 {
               width: 100%;
@@ -470,6 +520,16 @@ const Projetos = (props) => {
               width: 100%;
               text-align: center;
             }
+            .projetos-container15 {
+              width: 100%;
+            }
+            .projetos-container16 {
+              width: 100%;
+            }
+            .projetos-text7 {
+              width: 100%;
+              text-align: center;
+            }
           }
           @media (max-width: 767px) {
             .projetos-hero {
@@ -479,7 +539,7 @@ const Projetos = (props) => {
               top: 95px;
               left: 0px;
               width: 100%;
-              height: 237px;
+              height: 321px;
               position: absolute;
               align-items: center;
             }
@@ -535,6 +595,15 @@ const Projetos = (props) => {
             .projetos-text6 {
               font-size: 1.3rem;
             }
+            .projetos-container15 {
+              width: 100%;
+            }
+            .projetos-container16 {
+              width: 100%;
+            }
+            .projetos-text7 {
+              font-size: 1.3rem;
+            }
           }
           @media (max-width: 479px) {
             .projetos-hero {
@@ -548,7 +617,7 @@ const Projetos = (props) => {
               top: 96px;
               left: 0px;
               width: 100%;
-              height: 367px;
+              height: 425px;
               padding: var(--dl-space-space-unit);
               position: absolute;
               align-self: flex-start;
@@ -619,6 +688,17 @@ const Projetos = (props) => {
               margin-bottom: 10px;
             }
             .projetos-text6 {
+              font-size: 1.2rem;
+            }
+            .projetos-container15 {
+              width: 100%;
+              height: auto;
+              display: flex;
+              margin-top: 10px;
+              margin-right: 0px;
+              margin-bottom: 10px;
+            }
+            .projetos-text7 {
               font-size: 1.2rem;
             }
           }

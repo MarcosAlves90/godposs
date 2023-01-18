@@ -7,7 +7,7 @@ const Fundo = (props) => {
     <>
       <div className={`fundo-container ${props.rootClassName} `}>
         <img
-          alt={props.image_alt1}
+          alt="image"
           src={props.image_src1}
           loading="eager"
           className="fundo-image"
@@ -44,7 +44,7 @@ const Fundo = (props) => {
             right: 0px;
             width: 902px;
             height: 100%;
-            opacity: 0.5;
+            opacity: 0.3;
             position: fixed;
             object-fit: cover;
             object-position: right;
@@ -52,6 +52,9 @@ const Fundo = (props) => {
           }
 
           @media (max-width: 767px) {
+            .fundo-image1 {
+              width: 100%;
+            }
             .fundo-root-class-name2 {
               opacity: 1;
             }
@@ -69,17 +72,15 @@ const Fundo = (props) => {
 
 Fundo.defaultProps = {
   image_alt: 'image',
-  image_src1: '/playground_assets/avoid-200h.jpg',
-  image_alt1: 'image',
+  image_src1: '/playground_assets/avoid-1000w.jpg',
   image_src:
-    'https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Image-about-aesthetic-in-Wallpaper-by.png?w=640&ssl=1',
+    'https://i.pinimg.com/originals/35/e2/72/35e272c437b6953102474c9643615fe3.jpg',
   rootClassName: '',
 }
 
 Fundo.propTypes = {
   image_alt: PropTypes.string,
   image_src1: PropTypes.string,
-  image_alt1: PropTypes.string,
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
 }

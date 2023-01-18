@@ -23,7 +23,7 @@ const DarkStories = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/b661a600-36d1-40ec-9b48-e5707187c246?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/361a0576-f35f-4b54-b749-946972506b06?org_if_sml=1"
           />
         </Head>
         <Header></Header>
@@ -47,10 +47,20 @@ const DarkStories = (props) => {
                   desenvolvida há bastante tempo.
                 </span>
               </span>
-              <Voltar
-                button="Voltar"
-                rootClassName="voltar-root-class-name1"
-              ></Voltar>
+              <div className="dark-stories-container2">
+                <Voltar
+                  button="Voltar"
+                  rootClassName="voltar-root-class-name1"
+                ></Voltar>
+                <a
+                  href="https://sites.google.com/view/darkstories"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="dark-stories-link button"
+                >
+                  <span className="dark-stories-text3">DARK STORIES WIKI</span>
+                </a>
+              </div>
             </div>
           </div>
           <Fundo rootClassName="fundo-root-class-name5"></Fundo>
@@ -124,6 +134,49 @@ const DarkStories = (props) => {
             padding-right: var(--dl-space-space-tripleunit);
             text-transform: none;
             text-decoration: none;
+          }
+          .dark-stories-container2 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+          .dark-stories-link {
+            color: #000000;
+            height: auto;
+            outline: none;
+            font-size: 0.75rem;
+            background: #d49789;
+            font-style: normal;
+            transition: 0.3s;
+            font-family: Open Sans;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-left: 15px;
+            padding-top: var(--dl-space-space-triplequarterunit);
+            border-color: #b78a6f;
+            border-width: 3px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: var(--dl-radius-radius-radius1);
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            letter-spacing: -0.025rem;
+            padding-bottom: var(--dl-space-space-triplequarterunit);
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: transparent;
+          }
+          .dark-stories-link:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.1);
+          }
+          .dark-stories-text3 {
+            color: #b78a6f;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 600;
           }
           @media (max-width: 991px) {
             .dark-stories-hero {

@@ -18,17 +18,16 @@ const Voltar = (props) => {
             position: relative;
           }
           .voltar-link {
-            color: #bf8787;
+            color: #88644e;
             outline: none;
             font-size: 0.8rem;
-            background: #bf8787;
             font-style: normal;
             transition: 0.3s;
             font-family: Open Sans;
             font-weight: 600;
             line-height: 1.4;
             padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: #bf8787;
+            border-color: #88644e;
             border-width: 3px;
             padding-left: var(--dl-space-space-unitandahalfunit);
             border-radius: var(--dl-radius-radius-radius1);
@@ -37,7 +36,7 @@ const Voltar = (props) => {
             padding-bottom: var(--dl-space-space-triplequarterunit);
             text-transform: uppercase;
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0);
+            background-color: transparent;
           }
           .voltar-link:hover {
             cursor: pointer;

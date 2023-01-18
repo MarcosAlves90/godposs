@@ -31,7 +31,7 @@ const Header = (props) => {
               <div className="header-container2">
                 <PlaceHolder rootClassName="place-holder-root-class-name"></PlaceHolder>
               </div>
-              <div data-type="BurgerMenu" className="header-burger-menu">
+              <div data-role="BurgerMenu" className="header-burger-menu">
                 <svg viewBox="0 0 1024 1024" className="header-icon">
                   <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
@@ -39,12 +39,12 @@ const Header = (props) => {
             </div>
           </div>
         </nav>
-        <div data-type="MobileMenu" className="header-mobile-menu">
+        <div data-role="MobileMenu" className="header-mobile-menu">
           <div className="header-top">
-            <Link href="/incio">
+            <Link href="/">
               <a className="header-link4">Poseidon</a>
             </Link>
-            <div data-type="CloseMobileMenu" className="header-close-menu">
+            <div data-role="CloseMobileMenu" className="header-close-menu">
               <svg viewBox="0 0 1024 1024" className="header-icon2">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
               </svg>
@@ -274,6 +274,7 @@ const Header = (props) => {
           .header-link6:hover {
             transform: scale(1.2);
           }
+
           @media (max-width: 991px) {
             .header-nav {
               max-width: 960px;
@@ -302,6 +303,9 @@ const Header = (props) => {
             }
             .header-mobile-menu {
               display: none;
+            }
+            .header-link4 {
+              font-family: NMSFuturaProBook;
             }
           }
         `}

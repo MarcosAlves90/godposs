@@ -24,7 +24,7 @@ const DoomsdayGlock = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/b661a600-36d1-40ec-9b48-e5707187c246?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/361a0576-f35f-4b54-b749-946972506b06?org_if_sml=1"
           />
         </Head>
         <Header></Header>
@@ -38,9 +38,11 @@ const DoomsdayGlock = (props) => {
               <h1 className="doomsday-glock-text">
                 &quot;Você parece preso em um loop&quot;
               </h1>
-              <span className="doomsday-glock-text1">
-                <span className="doomsday-glock-text2">The Doomsday Glock</span>
-                <span>
+              <span className="doomsday-glock-text01">
+                <span className="doomsday-glock-text02">
+                  The Doomsday Glock
+                </span>
+                <span className="doomsday-glock-text03">
                   {' '}
                   é o nome de um jogo criado para uma atividade escolar, mas que
                   acabou se mostrando com muito potencial. No jogo você é o
@@ -50,8 +52,8 @@ const DoomsdayGlock = (props) => {
                   claro. Futuras atualizações podem revelar fragmentos de sua
                   verdadeira história.
                 </span>
-                <br></br>
-                <span>
+                <br className="doomsday-glock-text04"></br>
+                <span className="doomsday-glock-text05">
                   O jogo é atualmente desenvolvido por mim, mas inicialmente
                   tive ajuda da equipe do
                   <span
@@ -64,19 +66,13 @@ const DoomsdayGlock = (props) => {
                   href="https://twitter.com/DiseeObserva"
                   target="_blank"
                   rel="noreferrer noopener"
+                  className="doomsday-glock-link"
                 >
-                  <span className="doomsday-glock-text5">Disee</span>
+                  Disee
                 </a>
-                <span>
-                  .
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span>
+                <span className="doomsday-glock-text06">.</span>
+                <br className="doomsday-glock-text07"></br>
+                <span className="doomsday-glock-text08">
                   Mais informações e downloads do jogo podem ser encontrados em
                   sua página.
                 </span>
@@ -96,7 +92,18 @@ const DoomsdayGlock = (props) => {
                   rel="noreferrer noopener"
                   className="doomsday-glock-link2 button"
                 >
-                  <span className="doomsday-glock-text8">Página do jogo</span>
+                  <span className="doomsday-glock-text09">
+                    <span>ITCH.IO</span>
+                    <br></br>
+                  </span>
+                </a>
+                <a
+                  href="https://gamejolt.com/games/doomsday-glock/743859"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="doomsday-glock-link3 button"
+                >
+                  <span className="doomsday-glock-text12">GameJolt</span>
                 </a>
               </div>
             </div>
@@ -161,8 +168,7 @@ const DoomsdayGlock = (props) => {
             text-transform: none;
             text-decoration: overline;
           }
-          .doomsday-glock-text1 {
-            color: #ffffff;
+          .doomsday-glock-text01 {
             font-size: 1.25rem;
             font-family: Open Sans;
             font-weight: 400;
@@ -171,15 +177,33 @@ const DoomsdayGlock = (props) => {
             margin-bottom: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-tripleunit);
             text-transform: none;
-            text-decoration: none;
           }
-          .doomsday-glock-text2 {
+          .doomsday-glock-text02 {
+            color: #ffffff;
             font-style: italic;
             font-weight: 400;
           }
-          .doomsday-glock-text5 {
-            color: #eae4b2;
+          .doomsday-glock-text03 {
+            color: #ffffff;
+          }
+          .doomsday-glock-text04 {
+            color: #ffffff;
+          }
+          .doomsday-glock-text05 {
+            color: #ffffff;
+          }
+          .doomsday-glock-link {
+            color: #daab90;
             text-decoration: underline;
+          }
+          .doomsday-glock-text06 {
+            color: #ffffff;
+          }
+          .doomsday-glock-text07 {
+            color: #ffffff;
+          }
+          .doomsday-glock-text08 {
+            color: #ffffff;
           }
           .doomsday-glock-container2 {
             flex: 0 0 auto;
@@ -196,7 +220,7 @@ const DoomsdayGlock = (props) => {
             text-decoration: none;
           }
           .doomsday-glock-link2 {
-            color: #07c0d0;
+            color: #b78a6f;
             height: auto;
             outline: none;
             font-size: 0.75rem;
@@ -208,7 +232,7 @@ const DoomsdayGlock = (props) => {
             line-height: 1.4;
             margin-left: 15px;
             padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: #07c0d0;
+            border-color: #b78a6f;
             border-width: 3px;
             padding-left: var(--dl-space-space-unitandahalfunit);
             border-radius: var(--dl-radius-radius-radius1);
@@ -224,7 +248,41 @@ const DoomsdayGlock = (props) => {
             opacity: 0.5;
             transform: scale(1.1);
           }
-          .doomsday-glock-text8 {
+          .doomsday-glock-text09 {
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 600;
+          }
+          .doomsday-glock-link3 {
+            color: #daab90;
+            height: auto;
+            outline: none;
+            font-size: 0.75rem;
+            background: #d49789;
+            font-style: normal;
+            transition: 0.3s;
+            font-family: Open Sans;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-left: 15px;
+            padding-top: var(--dl-space-space-triplequarterunit);
+            border-color: #daab90;
+            border-width: 3px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: var(--dl-radius-radius-radius1);
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            letter-spacing: -0.025rem;
+            padding-bottom: var(--dl-space-space-triplequarterunit);
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0);
+          }
+          .doomsday-glock-link3:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transform: scale(1.1);
+          }
+          .doomsday-glock-text12 {
             font-size: 0.8rem;
             font-style: normal;
             font-weight: 600;
@@ -254,7 +312,7 @@ const DoomsdayGlock = (props) => {
             .doomsday-glock-text {
               display: none;
             }
-            .doomsday-glock-text1 {
+            .doomsday-glock-text01 {
               font-size: 1.1rem;
               text-align: left;
               margin-right: 0px;
@@ -272,7 +330,7 @@ const DoomsdayGlock = (props) => {
               height: auto;
               padding: var(--dl-space-space-unit);
             }
-            .doomsday-glock-text1 {
+            .doomsday-glock-text01 {
               font-size: 1rem;
             }
           }

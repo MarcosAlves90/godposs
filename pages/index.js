@@ -22,10 +22,10 @@ const Incio = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/32bcf009-ddcf-42b2-ba4f-ec95d91e28de?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bfa02ed4-99f1-45f1-89bb-b0162fa97bf3/361a0576-f35f-4b54-b749-946972506b06?org_if_sml=1"
           />
         </Head>
-        <Header></Header>
+        <Header rootClassName="header-root-class-name"></Header>
         <div className="incio-hero">
           <div className="incio-container1">
             <div className="incio-card">
@@ -43,13 +43,11 @@ const Incio = (props) => {
                   tenho muitos projetos, alguns grandes, outros pequenos, mas
                   nenhum impossível.
                 </span>
-                <br></br>
                 <span>
                   Gosto muito de criar coisas novas e desafiar os padrões atuais
                   de formas que ninguém conseguiria pensar, e acredito que é
                   isso que me faz ser eu.
                 </span>
-                <br></br>
                 <span></span>
                 <span>
                   Tudo que eu crio é ou tem a ver com histórias que escrevo, por
@@ -66,42 +64,42 @@ const Incio = (props) => {
                 <br></br>
                 <span></span>
                 <span className="incio-text12">E-mail de contato:</span>
-                <span> MarcosAlves25@proton.me</span>
-                <br></br>
-                <span></span>
-              </span>
-              <div className="incio-container2">
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
                 <a
-                  href="https://twitter.com/PanWHoney"
-                  target="_blank"
-                  rel="noreferrer noopener"
+                  href="mailto:MarcosAlves25@proton.me?subject=Contato"
                   className="incio-link"
                 >
-                  <svg
-                    viewBox="0 0 950.8571428571428 1024"
-                    className="incio-icon"
+                  MarcosAlves25@proton.me
+                </a>
+                <br></br>
+              </span>
+              <div className="incio-container2">
+                <div className="incio-container3">
+                  <a
+                    href="https://www.linkedin.com/in/marcosalveslopesjunior/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="incio-link1"
                   >
-                    <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                  </svg>
-                </a>
+                    <svg viewBox="0 0 1024 1024" className="incio-icon">
+                      <path d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"></path>
+                    </svg>
+                  </a>
+                </div>
                 <a
-                  href="https://www.youtube.com/channel/UCLL0KtW0kFO8qCcc5EmZE8w"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="incio-link1"
-                >
-                  <svg viewBox="0 0 1024 1024" className="incio-icon2">
-                    <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://www.twitch.tv/homegatro"
+                  href="https://linktr.ee/kasugari"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="incio-link2"
                 >
-                  <svg viewBox="0 0 1024 1024" className="incio-icon4">
-                    <path d="M512 248v248h-82.857v-248h82.857zM739.429 248v248h-82.857v-248h82.857zM739.429 682.286l144.571-145.143v-454.286h-682.286v599.429h186.286v124l124-124h227.429zM966.857 0v578.857l-248 248h-186.286l-124 124h-124v-124h-227.429v-661.714l62.286-165.143h847.429z"></path>
+                  <svg viewBox="0 0 1024 1024" className="incio-icon2">
+                    <path d="M832 960l192-512h-832l-192 512zM128 384l-128 576v-832h288l128 128h416v128z"></path>
                   </svg>
                 </a>
               </div>
@@ -141,15 +139,17 @@ const Incio = (props) => {
             justify-content: center;
           }
           .incio-card {
+            top: 162px;
             flex: 0 0 auto;
+            left: 0px;
             width: 996px;
             display: flex;
             padding: var(--dl-space-space-tripleunit);
             z-index: 1;
+            position: absolute;
             align-self: flex-start;
             box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
-            margin-top: 50px;
             align-items: flex-start;
             border-radius: var(--dl-radius-radius-radius1);
             flex-direction: column;
@@ -167,7 +167,7 @@ const Incio = (props) => {
             text-decoration: overline;
           }
           .incio-text01 {
-            color: #ffffff;
+            color: rgb(255, 255, 255);
             font-size: 1.25rem;
             font-family: Open Sans;
             font-weight: 400;
@@ -182,59 +182,72 @@ const Incio = (props) => {
             font-style: normal;
             font-weight: 700;
           }
+          .incio-link {
+            color: #daab90;
+            text-decoration: underline;
+          }
           .incio-container2 {
             flex: 0 0 auto;
             width: auto;
             height: 80px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
           }
-          .incio-link {
+          .incio-container3 {
+            flex: 0 0 auto;
+            width: auto;
+            height: 80px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+          .incio-link1 {
             display: contents;
           }
           .incio-icon {
-            fill: #bf8787;
-            width: 90px;
+            fill: #88644e;
+            width: auto;
             height: 80px;
-            align-self: stretch;
             transition: 0.3s;
+            padding-right: 10px;
             text-decoration: none;
           }
           .incio-icon:hover {
             cursor: pointer;
             opacity: 0.5;
-            transform: scale(1.1);
+            transform: scale(1.2);
           }
-          .incio-link1 {
+          .incio-link2 {
             display: contents;
           }
           .incio-icon2 {
-            fill: #bf8787;
-            width: 90px;
+            fill: #b78a6f;
+            width: auto;
             height: 80px;
             transition: 0.3s;
+            padding-left: 10px;
+            padding-right: 10px;
             text-decoration: none;
           }
           .incio-icon2:hover {
             cursor: pointer;
             opacity: 0.5;
-            transform: scale(1.1);
+            transform: scale(1.2);
           }
-          .incio-link2 {
-            display: contents;
-          }
-          .incio-icon4 {
-            fill: #bf8787;
-            width: 90px;
-            height: 80px;
-            transition: 0.3s;
-            text-decoration: none;
-          }
-          .incio-icon4:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            transform: scale(1.1);
+          @media (max-width: 1200px) {
+            .incio-icon {
+              fill: #88644e;
+              width: 88px;
+              height: 100%;
+              padding-right: 20px;
+            }
+            .incio-icon2 {
+              fill: #b78a6f;
+              width: 88px;
+              height: 100%;
+              padding-right: 20px;
+            }
           }
           @media (max-width: 991px) {
             .incio-hero {
@@ -296,15 +309,6 @@ const Incio = (props) => {
             .incio-text01 {
               font-size: 1rem;
               text-align: left;
-            }
-            .incio-icon {
-              width: auto;
-            }
-            .incio-icon2 {
-              width: auto;
-            }
-            .incio-icon4 {
-              width: auto;
             }
           }
         `}

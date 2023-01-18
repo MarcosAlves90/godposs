@@ -6,7 +6,7 @@ const PlaceHolder = (props) => {
   return (
     <>
       <div className={`place-holder-container ${props.rootClassName} `}>
-        <button className="place-holder-button button buttonSmall">
+        <button className="place-holder-button button ButtonSmall">
           {props.button}
         </button>
       </div>

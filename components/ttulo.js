@@ -23,7 +23,7 @@ const Ttulo = (props) => {
             line-height: 1.3;
             text-transform: none;
             text-decoration: none;
-            background-color: #bf8787;
+            background-color: #88644e;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }

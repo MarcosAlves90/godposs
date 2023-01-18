@@ -6,7 +6,7 @@ const Buto2 = (props) => {
   return (
     <>
       <div className="buto2-container">
-        <button className="buto2-button button buttonSmall">
+        <button className="buto2-button button ButtonSmall">
           {props.button}
         </button>
       </div>
