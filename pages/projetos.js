@@ -90,7 +90,7 @@ const Projetos = (props) => {
                   </a>
                 </Link>
               </div>
-              <Link href="/doomsdayglock">
+              <Link href="/tmw">
                 <a className="projetos-link6">
                   <div className="projetos-container15">
                     <div className="projetos-container16">
